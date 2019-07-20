@@ -1,0 +1,166 @@
+:root {
+	--mainWhite: #FDFEFE;
+	--btnBlue: #44A5E1;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background: var(--mainWhite);
+}
+
+/*Header*/
+
+#top_left_cloud {
+	width: 30rem;
+	height: 30rem;
+	position: absolute;
+	z-index: -100;
+}
+
+#main_logo {
+	width: 10rem;
+	height: 10rem;
+	margin-top: -1.5rem;
+	margin-left: 6rem;
+	position: absolute;
+	z-index: 100;
+}
+
+#main_nav {
+	display: grid;
+	float: right;
+	width: 30rem;
+	text-decoration: none;
+	list-style: none;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 1.5rem;
+	text-align: center;
+}
+
+.main_nav {
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.main_nav:hover {
+	text-decoration: underline;
+}
+
+.fa-bars {
+	display: none;
+}
+
+/*Home Div*/
+
+#home_div {
+	width: 95%;
+	height: 27rem;
+	margin-top: 11rem;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#home_desc {
+	margin-left: 6rem;
+	margin-top: 2rem;
+}
+
+#home_desc > h1 {
+	font-size: 2.5rem;
+}
+
+#home_desc > h2 {
+	font-size: 1.69rem;
+	margin-top: -1.5rem;
+}
+
+#home_desc > p {
+	width: 25rem;
+}
+
+#main_btn {
+	border: none;
+	border-radius: 3px;
+	font-size: 1rem;
+	font-weight: bold;
+	width: 7rem;
+	height: 2rem;
+	color: var(--mainWhite);
+	background: var(--btnBlue);
+}
+
+#main_illustration {
+	width: 30rem;
+	height: 30rem;
+	float: right;
+	margin-top: -1rem;
+}
+
+/*Second Div*/
+
+#second_div {
+	width: 100%;
+	height: 25rem;
+	margin-top: 50rem;
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);	
+}
+
+.second_div {
+	text-align: center;
+}
+
+.second_div > img {
+	width: 13rem;
+	height: 13rem;
+}
+
+.second_div > h3 {
+	margin-top: -2rem;
+}
+
+.second_div > p {
+	width: 10rem;
+	margin: 0px auto;
+	margin-top: -1rem;
+}
+
+#second_div div:nth-child(1) {
+	margin-top: -5rem;
+} 
+
+#second_div div:nth-child(3) {
+	margin-top: -3rem;
+} 
+
+/*Media Queris*/
+
+
+@media screen and (max-width: 750px) {
+	#main_nav {
+		display: none;
+	}
+	
+	.fa-bars {
+		display: inline;
+		float: right;
+		margin: 2rem;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+
+	#home_div {
+		grid-template-columns: none;
+		grid-template-rows: repeat(2, 1fr);	
+	}
+
+	#second_div {
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+	}
+}
