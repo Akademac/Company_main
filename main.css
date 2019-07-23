@@ -1,6 +1,9 @@
 :root {
 	--mainWhite: #FDFEFE;
 	--btnBlue: #44A5E1;
+	--mainLBlue: #E7F6FF;
+	--mainDBlue: #409CE8;
+	--mainOrange: #FFBC5E;
 }
 
 body {
@@ -41,13 +44,20 @@ body {
 	margin-right: 7rem;
 }
 
+.main_nav > a {
+	text-decoration: none;
+	color: black;
+	transition: 1s all;
+}
+
 .main_nav {
 	font-size: 1rem;
 	cursor: pointer;
 }
 
-.main_nav:hover {
+.main_nav > a:hover {
 	text-decoration: underline;
+	color: #409CE8;
 }
 
 .fa-bars {
@@ -92,6 +102,12 @@ body {
 	height: 2rem;
 	color: var(--mainWhite);
 	background: var(--btnBlue);
+	transition: 1s all;
+}
+
+#main_btn:hover {
+	background: #FFBC5E;
+	cursor: pointer;
 }
 
 #desk{
@@ -101,6 +117,7 @@ body {
 	/*margin-left: 50rem;*/
 	position: absolute;
 	margin-left: 5rem;
+	z-index: -100;
 }
 
 #man {
@@ -110,28 +127,51 @@ body {
 	/*margin-left: 50rem;*/
 	display: inline;
 	position: absolute;	
-	margin-top: 3.5rem;
 	margin-left: 50rem;
-	animation-name: go;
+	animation-name: go_man;
 	animation-duration: 5s;
-	animation-delay: 2s;
+	animation-delay: .5s;
 	animation-fill-mode: forwards;
 
 }
 
-@keyframes go {
+@keyframes go_man {
 	0% {
 		transform: translateX(0);
 	}
 
 	90% {
-		transform: translateX(-40.2rem);
+		transform: translateX(-45.2rem);
 	}
 
 	100% {
-		transform: translateX(-40rem);
+		transform: translateX(-45rem);
 	}
 
+}
+
+#mug {
+	width: 2.3rem;
+	height: 2.3rem;
+	margin-left: 13rem;
+	margin-top: -15rem;
+	z-index: 100;
+	position: absolute;
+	animation-name: go_mug;
+	animation-duration: .5s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes go_mug {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(30rem);
+	}
 }
 
 /*Second Div*/
@@ -164,6 +204,7 @@ hr {
 .second_div > img {
 	width: 13rem;
 	height: 13rem;
+	cursor: pointer;
 }
 
 .second_div > h3 {
@@ -192,31 +233,30 @@ hr {
 }
 
 #portfolio {
-	margin: 2rem auto;
-	text-align: center;
-	background: url(Images/about_us_cloud.png);
-	background-position: bottom;
-	background-size: contain;
-	/*background-attachment: fixed;*/
-	background-repeat: no-repeat;
-	width: 80rem;
+	width: 100%;
 	height: 40rem;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.portfolio_divs {
-	background: black;
-	width: 15rem;
-	height: 17rem;
-	margin: 10rem auto;
 }
 
 #portfolio_back {
-	width: 70rem;
+	width: 100%;
 	height: 60rem;
-	margin: 0px auto;
-	margin-top: 10rem;
+	margin-top: -20rem;
+}
+
+#portfolio_comp {
+	width: 35rem;
+	height: 35rem;
+	position: absolute;
+	margin-top: 0rem;
+}
+
+#portfolio_img {
+	width: 300px;
+	height: 180px;
+	top: 95.1rem;
+	left: 7.1rem;
+	transform: translate(50, 50);
+	position: absolute;
 }
 
 /*How it works*/
@@ -228,21 +268,47 @@ hr {
 
 #how_it_works {
 	width: 90%;
-	height: 30rem;
+	height: 43rem;
 	margin: 2rem auto;
 	background: white;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 1rem;
 	text-align: center;
 }
 
 .h_i_w_divs {
-	display: flex;
-	align-items: center;
-	align-content: center;
+	display: grid;
+	grid-template-rows: 50% 15% 35%;
 	margin: 0rem auto;
+	margin-top: 1.5rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: .5rem;
+	transition: 1s all;
+}
+
+.h_i_w_divs:hover {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 3px lightgrey;
+	cursor: pointer;
+	transition-timing-function: linear;
+}
+
+.h_i_w_divs > div {
+	font-size: .8rem;
+	text-align: center;
+	padding-top: -5rem;
+	width: 15rem;
+
+}
+
+.h_i_w_divs > img {
+	width: 10rem;
+	height: 10rem;
+	margin: 0px auto;
+	margin-bottom: 2rem;
 }
 
 .h_i_w-icons {
@@ -250,10 +316,12 @@ hr {
 	height: 10rem;
 }
 
+/*Footer*/
+
 #footer {
 	width: 100%;
 	height: 15rem;
-	background: #ECF5FF;
+	background: var(--mainDBlue);
 }
 
 #footer_logo {
@@ -279,6 +347,19 @@ i {
 	color: var(--btnBlue);
 }
 
+#footer_icons {
+	display: inline;
+	margin-top: 10rem;	
+	margin-left: -17rem;
+	position: absolute;
+}
+
+#footer_icons > i {
+	color: white;
+	font-size: 2rem;
+	padding-right: 1rem;
+}
+
 #footer_div {
 	float: right;
 	width: 15rem;
@@ -287,10 +368,11 @@ i {
 	display: inline;
 	display: grid;
 	grid-template-rows: repeat(4, 1fr);
+	color: white;
 }
 
 #footer_div > span {
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 #footer_div > span:hover {
