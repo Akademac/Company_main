@@ -1,0 +1,39 @@
+Site:
+
+	-safari complete(css /animations)
+	-hosting
+	-
+
+NAV:
+	-burger btn functions
+
+HOME:
+	-text
+	-adjustments
+	-btn (Mozila), go to contact page
+	-responsive
+
+You can expect:
+	-texts
+	-icons
+	-responsive
+
+Portfolio:
+	-bigger comp
+	-adjustments
+	-text
+	-responsive
+	-btn for second page
+
+Services:
+	-icons
+	-texts
+	-responsive
+
+Footer:
+	-adjustments
+	-responsive
+	-links
+
+
+

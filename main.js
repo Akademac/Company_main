@@ -26,4 +26,11 @@ interval = setInterval(() => {
 
 if(x === 10) {
 	clearInterval(interval);
-}
+};
+
+
+let burger = document.querySelector('#fa-bars');
+
+burger.addEventListener('click', () => {
+	burger.src = 'Images/burger_2.png';
+})
