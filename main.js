@@ -1,3 +1,10 @@
+//nav
+
+let burger = document.querySelector('#fa-bars');
+
+
+
+
 //Animation
 
 let desk = document.querySelector('#desk');
@@ -5,6 +12,9 @@ let desk = document.querySelector('#desk');
 setTimeout(() => {
 	desk.src = 'Images/desk.png'
 }, 4800);
+
+
+
 
 //Portfolio galery
 
@@ -29,8 +39,3 @@ if(x === 10) {
 };
 
 
-let burger = document.querySelector('#fa-bars');
-
-burger.addEventListener('click', () => {
-	burger.src = 'Images/burger_2.png';
-})
