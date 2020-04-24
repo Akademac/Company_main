@@ -186,8 +186,7 @@ hr {
 #second_div {
 	width: 90%;
 	height: 25rem;
-	margin: 0rem auto;
-	margin-top: 10rem; 
+	margin: 10rem auto;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);	
@@ -440,12 +439,22 @@ i {
 
 	#home_desc {
 		margin: 0px auto;
+
 	}
 
 	#home_desc > p {
 		margin: 0px auto;
+		font-size: .9rem;
 	}
 
+	#home_desc > h1 {
+		font-size: 1.5rem;
+	}
+
+	#home_desc > h2 {
+		font-size: 1.2rem;
+	}
+	
 	#main_btn {
 		margin-top: 2rem;
 		width: 8rem;
@@ -454,23 +463,69 @@ i {
 
 	#mug {
 		display: none;
+		margin-left: 0px;
 	}
 
 	#man {
 		margin: 0px;
 		animation: none;
-
-
+		margin-left: 0px;
+		margin-left: -250px;
 	} 
 
 	 #desk {
 		margin: 0px auto;
-
+		margin-left: -250px;
 	} 
 
 	 #main_ilustrtion {
 		text-align: none;
 	} 
+/* Second div */
+
+	#second_div_h {
+		text-align: center;
+		margin-top: 8rem;
+		color: var(--btnBlue);
+	}
+
+	#second_div {
+		width: 90%;
+		height: 55rem;
+		margin: 3rem auto;
+		position: relative;
+		display: grid;
+		grid-template-columns: none;	
+		grid-template-rows: repeat(3, 1fr);	
+	}
+
+	.second_div {
+		margin-top: 2rem;
+	}
+
+	#second_div div:nth-child(1) {
+		margin-top: 0rem;
+	} 
+	
+	#second_div div:nth-child(3) {
+		margin-top: 0rem;
+	} 
+
+
+
+
+
+
+/* portfolio */
+	#portfolio_img {
+		width: 24rem;
+		height: 15rem;
+		top: 96.5rem;
+		left: 9.1rem;
+		transform: translate(50, 50);
+		position: relative;
+		border-radius: 4px;
+	}
 }
 															
 
