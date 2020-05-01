@@ -571,13 +571,14 @@ i {
 	}
 
 	#portfolio_img {
-		width: 19rem;
+		/* width: 19rem;
 		height: 11.3rem;
 		top: 157.9rem;
 		left: 18.1rem;
 		transform: translate(50, 50);
 		position: absolute;
-		border-radius: 4px;
+		border-radius: 4px; */
+		display: none;
 	}
 
 	#portfolio_desc {
