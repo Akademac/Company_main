@@ -608,7 +608,7 @@ i {
 
 	#home_div {
 		width: 100%;
-		height: 55rem;
+		height: 50rem;
 		margin-top: 1rem auto;
 		position: relative;
 		display: grid;
@@ -618,18 +618,22 @@ i {
 
 	#home_desc {
 		margin-left: 0px;
-		margin-top: 2rem;
+		margin-top: 25rem;
 		text-align: center;
 	}
 
 	#desk {
 		width: 20rem;
 		height: 20rem;
+		margin-top: -37rem;
+
 	}
 
 	#man {
 		width: 20rem;
 		height: 20rem;
+		margin-top: -37rem;
+
 	}
 
 	#home_desc > h1 {
@@ -659,7 +663,7 @@ i {
 	}
 
 	#portfolio_comp {
-		margin: 0px 20px;
+		margin: 0px auto;
 		width: 20rem;
 		height: 20rem;
 		/* position: absolute; */
