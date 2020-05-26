@@ -622,6 +622,16 @@ i {
 		text-align: center;
 	}
 
+	#desk {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	#man {
+		width: 20rem;
+		height: 20rem;
+	}
+
 	#home_desc > h1 {
 		font-size: 2rem;
 	}
@@ -637,11 +647,15 @@ i {
 
 /* Portfolio  */
 
+	#portfolio {
+		margin: 0px auto;
+	}
+
 	#portfolio_h {
 		text-align: center;
 		color: var(--btnBlue);
 		margin: 5rem auto;
-		font-size: 1.8rem;
+		font-size: rem;
 	}
 
 	#portfolio_comp {
