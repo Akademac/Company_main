@@ -608,7 +608,7 @@ i {
 
 	#home_div {
 		width: 100%;
-		height: 50rem;
+		height: 47rem;
 		margin-top: 1rem auto;
 		position: relative;
 		display: grid;
@@ -625,14 +625,14 @@ i {
 	#desk {
 		width: 20rem;
 		height: 20rem;
-		margin-top: -37rem;
+		margin-top: -35rem;
 
 	}
 
 	#man {
 		width: 20rem;
 		height: 20rem;
-		margin-top: -37rem;
+		margin-top: -35rem;
 
 	}
 
@@ -663,16 +663,19 @@ i {
 	}
 
 	#portfolio_comp {
-		margin: 0px auto;
+		margin: 0px 0px 0px 20px;
 		width: 20rem;
 		height: 20rem;
-		/* position: absolute; */
+		position: relative;
+		/* margin-right: 0px;
+		margin-left: 20px; */
+
 	}
 
 	#portfolio_desc {
 		text-align: center;
 		margin-left: 0px;
-		margin-top: -5rem;
+		margin-top: -2rem;
 	}
 
 	#portfolio_desc > p {
