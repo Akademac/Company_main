@@ -663,12 +663,12 @@ i {
 		width: 20rem;
 		height: 20rem;
 		/* position: absolute; */
-		margin-top: 15rem;
 	}
 
 	#portfolio_desc {
 		text-align: center;
 		margin-left: 0px;
+		margin-top: -5rem;
 	}
 
 	#portfolio_desc > p {
