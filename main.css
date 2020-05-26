@@ -623,11 +623,11 @@ i {
 	}
 
 	#home_desc > h1 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 
 	#home_desc > h2 {
-		font-size: 1.69rem;
+		font-size: 1.49rem;
 	}
 
 	#home_desc > p {
@@ -639,8 +639,8 @@ i {
 
 	#portfolio_comp {
 		margin: 0px auto;
-		width: 25rem;
-		height: 25rem;
+		width: 22rem;
+		height: 22rem;
 		/* position: absolute; */
 		margin-top: 15rem;
 	}
