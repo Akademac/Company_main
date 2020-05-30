@@ -1,9 +1,16 @@
 //nav
 
 let burger = document.querySelector('#fa-bars');
+let mini_nav = document.querySelector('.mini_navigation');
 
-
-
+burger.addEventListener('click', () => {
+	if(mini_nav.classList.contains('act')) {
+		mini_nav.classList.remove('act');
+	}
+	else {
+		mini_nav.classList.add('act');
+	}
+})
 
 //Animation
 
