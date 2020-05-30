@@ -73,21 +73,22 @@ body {
 	width: 15rem;
 	margin-top: -2rem;
 	border-radius: 5px;
-	display: none;
 	margin-right: -15rem;
-	transition: 1s all;
+	display: none;
+
 }
 
 .act {
-	display: block;
 	margin-right: 0rem;
+	display: block;
+	transition: 3s all;
 }
 
 
 #mini_nav {
 	list-style: none;
+	padding-left: 1rem;
 	text-align: center;
-	padding: 1rem;
 }
 
 .mini_nav {
