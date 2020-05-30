@@ -73,13 +73,13 @@ body {
 	width: 15rem;
 	margin-top: -2rem;
 	border-radius: 5px;
-	/* display: none; */
+	display: none;
 	margin-right: -15rem;
 	transition: 1s all;
 }
 
 .act {
-	/* display: block; */
+	display: block;
 	margin-right: 0rem;
 }
 
