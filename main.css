@@ -146,7 +146,6 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0px auto;
 }
 
 #main_btn:hover {
@@ -511,7 +510,8 @@ i {
 	}
 	
 	#main_btn {
-		margin-top: 1rem;
+		margin: 1.5rem auto;
+
 	}
 
 	 #main_ilustrtion {
@@ -619,7 +619,7 @@ i {
 
 	#portfolio_desc {
 		display: block;
-		margin: 15rem auto;
+		margin: 17rem auto;
 		text-align: center;
 	}
 
@@ -722,7 +722,7 @@ i {
 
 	#portfolio_desc {
 		text-align: center;
-		margin: 10rem auto;
+		margin: 11rem auto;
 	}
 
 	#portfolio_desc > p {
