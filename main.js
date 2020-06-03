@@ -7,7 +7,6 @@ let mini_nav = document.querySelector('.mini_navigation');
 burger.addEventListener('click', () => {
 	let burger_src = burger.getAttribute('src');
 
-	
 	if(burger_src == 'Images/burger_2.png') {
 		burger.src = 'Images/burger_1.png';
 	}
@@ -33,9 +32,6 @@ setTimeout(() => {
 	desk.src = 'Images/desk.png'
 }, 4800);
 
-
-
-
 //Portfolio galery
 
 let portfolio_img = document.querySelector('#portfolio_img');
@@ -58,4 +54,19 @@ if(x === 10) {
 	clearInterval(interval);
 };
 
+//Portfolio new page
 
+let portfolio_btn = document.querySelector('#portfolio_btn');
+
+portfolio_btn.addEventListener('click', () => {
+	window.open('portfolio.html');
+});
+
+
+//Go to Contact
+
+let main_btn = document.querySelector('#main_btn');
+
+main_btn.addEventListener('click', () => {
+	window.open('contact.html');
+})
