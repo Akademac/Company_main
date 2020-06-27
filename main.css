@@ -5,6 +5,7 @@
 	--mainDBlue: #409CE8;
 	--mainOrange: #FFBC5E;
 	--darkBlue: #677EFC;
+	--lightgrey: rgb(248, 247, 247);
 }
 
 body {
@@ -141,35 +142,24 @@ a {
 
 #home_desc > p {
 	width: 25rem;
+	margin-bottom: 2rem;
 }
 
-#main_btn {
+#main_btn, #portfolio_btn {
 	border: none;
 	border-radius: 20px;
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	font-weight: bold;
-	width: 7rem;
-	height: 2rem;
+	/* width: 7rem;
+	height: 2rem; */
 	color: var(--mainWhite);
 	background: var(--btnBlue);
 	transition: 1s all;
 	display: inline;
-	padding: 4px 20px;
+	padding: 8px 20px;
+	margin-bottom: -10rem;
 }
 
-#portfolio_btn {
-	border: none;
-	border-radius: 20px;
-	font-size: 1rem;
-	font-weight: bold;
-	width: 7rem;
-	height: 2rem;
-	color: var(--mainWhite);
-	background: var(--btnBlue);
-	transition: 1s all;
-	display: inline;
-	padding: 4px 20px;
-}
 
 #main_btn:hover, #portfolio_btn:hover {
 	background: #FFBC5E;
@@ -330,24 +320,10 @@ hr {
 
 #portfolio_desc > p {
 	width: 30rem;
+	margin-bottom: 2rem;
 }
 
-#portfolio_desc > div {
-	border: none;
-	border-radius: 3px;
-	font-size: 1rem;
-	font-weight: bold;
-	width: 9rem;
-	height: 2.5rem;
-	color: var(--mainWhite);
-	background: var(--btnBlue);
-	transition: 1s all;
-}
 
-#portfolio_desc > div:hover {
-	background: #FFBC5E;
-	cursor: pointer;	
-}
 
 /*Services*/
 
@@ -534,6 +510,7 @@ strong {
 	
 	#home_desc > p {
 		margin: 0px auto;
+		margin-bottom: 2rem;
 	}
 	
 	#main_btn, #portfolio_btn {
@@ -653,6 +630,7 @@ strong {
 	#portfolio_desc > p {
 		width: 30rem;
 		margin: 0px auto;
+		margin-bottom: 2rem;
 	}
 
 	#portfolio_desc > button {
@@ -709,6 +687,7 @@ strong {
 	#home_desc > p {
 		margin: 0px auto;
 		width: 20rem;
+		margin-bottom: 2rem;
 	}
 
 /* Portfolio  */
@@ -753,6 +732,7 @@ strong {
 	#portfolio_desc > p {
 		width: 20rem;
 		margin: 0px auto;
+		margin-bottom: 2rem;
 	}
 
 /* #services */
@@ -817,6 +797,8 @@ strong {
 	}
 }
 
+
+														/* About Us Page*/
 
 
 /* About Us */
@@ -922,6 +904,10 @@ strong {
 }
 
 
+
+																/* Contact Page */
+
+
 /* Contact */
 
 #contact_div {
@@ -930,22 +916,88 @@ strong {
 }
 
 #con_div {
-	width: 90%;
+	width: 91%;
 	height: 30rem;
 	margin: 2rem auto;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-#con_form > input {
-	padding: 5px;
-	border-radius: 5px;
-	 background-color: aqua;
+	grid-template-columns: 41% 69%;
 }
 
 #con_first {
 	margin-left: 4rem;
+
 }
+
+#con_first > h2 {
+	color: var(--btnBlue);
+	font-size: 2rem;
+}
+
+#con_desc {
+	width: 17rem;
+	font-weight: bold;
+}
+
+#con_email_wraper {
+	margin-top: 2.5rem;
+}
+
+#con_email_span {
+	margin-top: 4rem;
+}
+
+#con_email_icon {
+	font-size: 1.5rem;
+}
+
+#con_email_div {
+	display: flex;
+	margin-left: 2rem;
+	margin-top: -2.62rem;
+}
+
+#con_email_address {
+	display: inline;
+	font-weight: bold;
+}
+
+#con_first i {
+	font-size: 1.5rem;
+}
+
+#con_all_icons {
+	margin-top: 2.5rem;
+}
+
+#con_all_icons i:not(:first-child) {
+	margin-left: 1rem;
+}
+
+
+::placeholder {
+	color: var(--darkBlue);
+
+}
+
+#con_second {
+	margin-top: 1.5rem;
+}
+
+#con_form > input {
+	border-radius: 5px;
+	width: 15rem;
+	height: 2rem;
+	border: none;
+	background: var(--lightgrey);
+	padding-left: 2rem;
+}
+
+
+
+#con_form > input:not(:first-child) {
+	margin-left: 1.5rem;
+}
+
 
 #con_form {
 	margin-top: 1rem;
@@ -954,13 +1006,33 @@ strong {
 
 #con_form > textarea {
 	display: block;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	border-radius: 5px;
-	background-color: aqua;
-
+	background: var(--lightgrey);
+	border: none;
+	padding-left: 2rem;
+	padding-top: 1rem;
 }
 
-#con_form > button {
-	margin-top: 3rem;
-	border-radius: 5px;
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+
+
+#con_submit {
+	padding: 12px 20px;
+	background: var(--btnBlue);
+	border: none;
+	border-radius: 20px;
+	margin-top: 2rem;
+	color: var(--mainWhite);
+	font-weight: bold;
+	cursor: pointer;
+	transition: 2s all;
+}
+
+#con_submit:hover {
+	background: var(--mainOrange);
 }

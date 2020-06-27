@@ -68,5 +68,5 @@ portfolio_btn.addEventListener('click', () => {
 let main_btn = document.querySelector('#main_btn');
 
 main_btn.addEventListener('click', () => {
-	window.open('contact.html');
+	window.open('contact.html', '_self');
 })
