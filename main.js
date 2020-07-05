@@ -54,12 +54,13 @@ if(x === 10) {
 	clearInterval(interval);
 };
 
-//Portfolio new page
+
+//Go to Portfolio
 
 let portfolio_btn = document.querySelector('#portfolio_btn');
 
 portfolio_btn.addEventListener('click', () => {
-	window.open('portfolio.html');
+	window.open('portfolio.html', '_self');
 });
 
 
@@ -69,4 +70,31 @@ let main_btn = document.querySelector('#main_btn');
 
 main_btn.addEventListener('click', () => {
 	window.open('contact.html', '_self');
-})
+});
+
+
+//page scroll animations
+
+let icon_alarm_left = document.querySelector('.icon_alarm_left');
+let icon_alarm_right = document.querySelector('.icon_alarm_right');
+let small_alarm_needle = document.querySelector('.small_alarm_needle');
+let second_div_pen = document.querySelector('.second_div_pen');
+let second_div_ruler = document.querySelector('.second_div_ruler');
+
+window.addEventListener('scroll', () => {
+	let scrollY = window.scrollY;
+	console.log(scrollY);
+
+	if(scrollY > 500) {
+		expects_anim();
+	}
+});
+
+
+let expects_anim = () => {
+	icon_alarm_left.classList.add('icon_alarm_left_anim');
+	icon_alarm_right.classList.add('icon_alarm_right_anim');
+	small_alarm_needle.classList.add('small_alarm_needle_anim');
+	second_div_pen.classList.add('second_div_pen_anim');
+	second_div_ruler.classList.add('second_div_ruler_anim');
+}; 
