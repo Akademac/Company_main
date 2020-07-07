@@ -23,19 +23,3 @@ burger.addEventListener('click', () => {
 	}
 	
 })
-
-
-//home div 
-
-
-let portf_btn = document.querySelector('#about_us_homeDiv_port');
-let cont_btn = document.querySelector('#about_us_homeDiv_cont');
-
-portf_btn.addEventListener('click', () => {
-    window.open('portfolio.html', '_self')
-})
-
-
-cont_btn.addEventListener('click', () => {
-    window.open('contact.html', '_self')
-})
