@@ -72,6 +72,11 @@ main_btn.addEventListener('click', () => {
 	window.open('contact.html', '_self');
 });
 
+let footer_logo = document.querySelector('#footer_logo');
+
+footer_logo.addEventListener('click', () => {
+	window.open('index.html', '_self');
+})
 
 //page scroll animations
 
