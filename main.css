@@ -565,6 +565,13 @@ i {
 
 /* Contact */
 
+#con_top_left_cloud {
+	width: 35rem;
+	height: 35rem;
+	position: absolute;
+	z-index: -100;
+}
+
 #contact_div {
 	width: 100%;
 	height: 40rem;
@@ -634,10 +641,8 @@ i {
 	margin-left: 1rem;
 }
 
-
 ::placeholder {
 	color: var(--darkBlue);
-
 }
 
 #con_second {
@@ -992,12 +997,12 @@ strong {
 
 
 	#icon_alarm_left {
-		margin-left: -14rem;
+		margin-left: -13.1rem;
 		margin-top: 1rem;
 	}
 
 	#icon_alarm_right {
-		margin-left: -13rem;
+		margin-left: -13.6rem;
 		margin-top: 1rem;
 	}
 
@@ -1022,37 +1027,6 @@ strong {
 		margin-top: .5rem;
 	
 	}
-	
-	/* Animations mobile*/
-
-	@keyframes icon_alarm_left {
-		0% {
-			transform: translateX(0rem);
-		}
-
-		90% {
-			transform: translateX(3rem);
-		}
-
-		100% {
-			transform: translateX(2.8rem);
-		}
-	}
-
-	@keyframes icon_alarm_right {
-		0% {
-			transform: translateX(0rem);
-		}
-
-		90% {
-			transform: translateX(-3rem);
-		}
-
-		100% {
-			transform: translateX(-2.8rem);
-		}
-	}
-			
 	
 /*Third Div*/
 
@@ -1117,13 +1091,61 @@ strong {
 		text-align: center;
 	}
 	
-	
 	#main_cloud {
 		width: 80px;
 		height: 45px;
 		display: block;
 		margin: 12rem auto 2rem auto;
 	}
+
+	/* Contact Page */
+
+	#contact_div {
+		height: 80rem;
+		text-align: center;
+	}
+	
+	#con_div {
+		margin: 2rem auto;
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	#con_first {
+		margin-left: 0rem;	
+	}
+
+	#con_desc {
+		width: none;
+		margin: 0px auto;
+		font-weight: bold;
+	}
+
+	#con_email_icon {
+		margin-left: -11rem;
+	}
+
+	#con_second {
+		margin-top: 6rem;
+	}
+
+	#con_form > textarea {
+		display: block;
+		margin: 2rem auto;
+		border-radius: 5px;
+		background: var(--lightgrey);
+		border: none;
+		padding-left: 2rem;
+		padding-top: 1rem;
+	}
+
+	#con_form {
+		margin-top: 1rem;
+		margin-left: 0rem;
+	}
+	
+	
 }
 
 @media screen and (max-width: 800px) {
@@ -1258,10 +1280,6 @@ strong {
 		margin-left: -15rem;
 	}
 
-	i {
-		color: var(--mainWhite);
-	}
-
 	#footer_icons {
 		display: inline;
 		margin-top: 10rem;	
@@ -1292,14 +1310,35 @@ strong {
 		margin: 12rem auto 2rem auto;
 	}
 
-	
-#about_us_fdiv {
-	width: 60%;
-	height: 45rem;
-	text-align: center;
-	margin: 7rem auto;
+	#about_us_fdiv {
+		width: 60%;
+		height: 45rem;
+		text-align: center;
+		margin: 7rem auto;
+	}
+
 }
 
+@media screen and (max-width: 700px) {
+	#con_form > input {
+		width: 8rem;
+	}
+
+	#con_form > textarea {
+		display: block;
+		margin-top: 2rem;
+		border-radius: 5px;
+		background: var(--lightgrey);
+		border: none;
+		padding-left: 2rem;
+		padding-top: 1rem;
+		width: 20rem;
+	}
+
+	#con_form {
+		margin-top: 1rem;
+		margin-left: 0rem;
+	}
 }
 
 
