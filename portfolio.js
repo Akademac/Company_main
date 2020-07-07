@@ -54,11 +54,7 @@ portfolio_nav.addEventListener('click', () => {
     }
 })
 
-
-
 let world_traverse_galery = document.querySelector('#worldTraverse_1')
-
-
 
 let gal = 1;
 
@@ -77,3 +73,12 @@ interval = setInterval(() => {
 if(x === 10) {
 	clearInterval(interval);
 };
+
+
+// Footer Logo
+
+let footer_logo = document.querySelector('#footer_logo');
+
+footer_logo.addEventListener('click', () => {
+	window.open('index.html', '_self');
+})
