@@ -78,20 +78,21 @@ html {
 	/* float: right; */
 	background-color: var(--mainDBlue);
 	height: calc(100vh - 10rem);
-	width: 15rem;
 	margin-top: -2rem;
 	border-radius: 5px;
-	margin-right: -15rem;
+	/* margin-right: -15rem; */
 	transition: 3s all;
 	position: absolute;
 	right: 0;
 	z-index: 1;
-	display: none;
+	width: 0rem;
+	opacity: .9;
 }
 
 .act {
-	display: block;
-	margin-right: 0rem;
+	/* margin-right: 0rem; */
+	width: 15rem;
+
 }
 
 #mini_nav {
@@ -106,11 +107,21 @@ html {
 	font-weight: bold;
 }
 
+.mini_nav_a {
+	text-decoration: none;
+	color: var(--mainWhite);
+	/* color: red; */
+	display: none;
+}
+
+.mini_nav_a_act {
+	display: block;
+}
+
 a {
 	text-decoration: none;
 	color: var(--mainWhite);
 }
-
 /*Home Div*/
 
 #home_div {

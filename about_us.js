@@ -2,6 +2,7 @@
 
 let burger = document.querySelector('#fa-bars');
 let mini_nav = document.querySelector('.mini_navigation');
+let mini_nav_a = document.querySelectorAll('.mini_nav_a');
 
 
 burger.addEventListener('click', () => {
@@ -17,13 +18,21 @@ burger.addEventListener('click', () => {
 
 	if(mini_nav.classList.contains('act')) {
 		mini_nav.classList.remove('act');
+		setTimeout(() => {
+			mini_nav_a.forEach(e => {
+				e.classList.remove('mini_nav_a_act');
+			});
+		}, 3000)
+
 	}
 	else {
 		mini_nav.classList.add('act');
+		mini_nav_a.forEach(e => {
+			e.classList.add('mini_nav_a_act');
+		});
 	}
 	
 })
-
 
 //home div 
 
