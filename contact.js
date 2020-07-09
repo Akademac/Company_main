@@ -18,12 +18,9 @@ burger.addEventListener('click', () => {
 
 	if(mini_nav.classList.contains('act')) {
 		mini_nav.classList.remove('act');
-		setTimeout(() => {
 			mini_nav_a.forEach(e => {
 				e.classList.remove('mini_nav_a_act');
 			});
-		}, 3000)
-
 	}
 	else {
 		mini_nav.classList.add('act');

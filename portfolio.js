@@ -18,12 +18,9 @@ burger.addEventListener('click', () => {
 
 	if(mini_nav.classList.contains('act')) {
 		mini_nav.classList.remove('act');
-		setTimeout(() => {
 			mini_nav_a.forEach(e => {
 				e.classList.remove('mini_nav_a_act');
 			});
-		}, 3000)
-
 	}
 	else {
 		mini_nav.classList.add('act');
@@ -32,7 +29,9 @@ burger.addEventListener('click', () => {
 		});
 	}
 	
-})
+});
+
+//Portfolio Slider
 
 let portfolio_nav = document.querySelector("#portfolio_nav");
 let port_circle = document.querySelector('#port_page_circle');
@@ -48,14 +47,14 @@ let y = 0;
 portfolio_nav.addEventListener('click', () => {
     if(y == 0) {
         interval_1 = setInterval(() => {
-            if(x >= 31) {
+            if(x >= 26) {
                    clearInterval(interval_1);   
             }
             else {
                 x++;
                 port_circle.style.marginLeft = x + 'rem';
                 setTimeout(() => {
-                    port_page_slider_text.innerHTML = 'Web Design';
+                    port_page_slider_text.innerHTML = 'Print';
                     portfolio_nav.style.background = "var(--mainDBlue)";
                     port_circle.style.background = 'var(--mainOrange)';
                 }, 200);
@@ -70,14 +69,14 @@ portfolio_nav.addEventListener('click', () => {
     }
     else if(y == 1) {
         interval_1 = setInterval(() => {
-            if(x <= 0) {
+            if(x <= 2.8) {
                    clearInterval(interval_1);   
             }
             else {
                 x--;
                 port_circle.style.marginLeft = x + 'rem';
                 setTimeout(() => {
-                    port_page_slider_text.innerHTML = 'Web Development';
+                    port_page_slider_text.innerHTML = 'Web';
                     portfolio_nav.style.background = "var(--mainOrange)";
                     port_circle.style.background = 'var(--mainDBlue)';
                 }, 200);
@@ -90,25 +89,27 @@ portfolio_nav.addEventListener('click', () => {
     }
 })
 
-let world_traverse_galery = document.querySelector('#worldTraverse_1')
+//Portfolio Galery
 
-let gal = 1;
+// let world_traverse_galery = document.querySelector('#worldTraverse_1')
 
-let interval;
+// let gal = 1;
 
-interval = setInterval(() => {
-	if( x > 8) {
-		x = 1;
-	}
-	else {
-		world_traverse_galery.src = `Images/Portfolio_page/Sites/worldTraverse_${x}.jpg`;
-		x++;
-	}
-}, 2000)
+// let interval;
 
-if(x === 10) {
-	clearInterval(interval);
-};
+// interval = setInterval(() => {
+// 	if( x > 8) {
+// 		x = 1;
+// 	}
+// 	else {
+// 		world_traverse_galery.src = `Images/Portfolio_page/Sites/worldTraverse_${x}.jpg`;
+// 		x++;
+// 	}
+// }, 2000)
+
+// if(x === 10) {
+// 	clearInterval(interval);
+// };
 
 
 // Footer Logo
