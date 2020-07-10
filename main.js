@@ -21,8 +21,6 @@ burger.addEventListener('click', () => {
 			mini_nav_a.forEach(e => {
 				e.classList.remove('mini_nav_a_act');
 			});
-
-
 	}
 	else {
 		mini_nav.classList.add('act');
