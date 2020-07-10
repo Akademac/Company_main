@@ -982,7 +982,7 @@ textarea:focus, input:focus {
 
 	/* Portfolio Page */
 
-	.port_page_comp {
+	/* .port_page_comp {
 		width: 95%;
 		height: 30rem;
 		background-image: url('Images/port_page_comp.png');
@@ -991,7 +991,7 @@ textarea:focus, input:focus {
 		background-repeat: no-repeat;
 		z-index: -100;
 	}
-	
+	 */
 }
 
 strong {
