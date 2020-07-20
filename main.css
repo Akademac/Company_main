@@ -424,6 +424,7 @@ hr {
 	transition: 1s all;
 	text-align: center;
 	height: 30rem;
+	width: 20rem;
 }
 
 .services_divs:hover {
@@ -1429,6 +1430,14 @@ strong {
 		grid-gap: 1rem;
 		text-align: center;
 	}
+
+	.services_divs {
+		width: 18rem;
+	}
+/* 
+	#services_divs .services_divs:nth-child(1) {
+		height: ;
+	} */
 
 /*Footer*/
 
