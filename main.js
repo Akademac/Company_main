@@ -39,6 +39,24 @@ setTimeout(() => {
 	desk.src = 'Images/desk.png'
 }, 4800);
 
+//second div
+
+let second_div_third = document.querySelector('#second_div_third');
+let second_div_third_p = document.querySelector('#second_div_third_p');
+
+second_div_third.addEventListener('mouseover', () => {
+	second_div_third_p.innerHTML = `<p id='second_div_third_p'>If you are not satisfied with your delivery,
+	our team of designers will change everything you do not like
+even if it is the smallest thing, you have the opportunity for countless revisions</p>	`;
+});
+
+second_div_third.addEventListener('mouseout', () => {
+	second_div_third_p.innerHTML = `<p id='second_div_third_p'>If you are not satisfied with your delivery,
+	our team of designers will change everything you do not like...<!--y
+even if it is the smallest thing, you have the opportunity for countless revisions--></p>	`;
+});
+
+
 //Portfolio galery
 
 let portfolio_img = document.querySelector('#portfolio_img');
@@ -60,6 +78,48 @@ interval = setInterval(() => {
 if(x === 10) {
 	clearInterval(interval);
 };
+
+//services
+let services_web_development = document.querySelector('#services_web_development');
+let services_web_development_p = document.querySelector('#services_web_development_p');
+
+services_web_development.addEventListener('mouseover', () => {
+	services_web_development_p.innerHTML = `We deliver fully functional and professional designed websites 
+	and applications, that offer end users invariably perfect experience 
+	across desktops, smartphones, and tablets.
+	Beside that we modernize and completly redesign your unfriendly and 
+	old-fashioned web sites and аdjust them to answer modern trends.`;
+});
+
+services_web_development.addEventListener('mouseout', () => {
+	services_web_development_p.innerHTML = `We deliver fully functional and professional designed websites 
+	and applications, that offer end users invariably perfect experience 
+	across...<!--desktops, smartphones, and tablets.
+	Beside that we modernize and completly redesign your unfriendly and 
+	old-fashioned web sites and аdjust them to answer modern trends.-->`;
+});
+
+let services_single_page = document.querySelector('#services_single_page');
+let services_single_page_p = document.querySelector('#services_single_page_p');
+
+
+
+services_single_page.addEventListener('mouseover', () => {
+	services_single_page_p.innerHTML = `A single page website is one that fits on a single page.
+	Single page websites are fully loaded in the initial page
+	 load or page zones are replaced with new page fragments 
+   loaded from server on demand, making the experience more
+	continuous and fluid for the user.`
+});
+
+
+services_single_page.addEventListener('mouseout', () => {
+	services_single_page_p.innerHTML = `A single page website is one that fits on a single page.
+	Single page websites are fully loaded in the initial page
+	 load or...<!-- page zones are replaced with new page fragments 
+   loaded from server on demand, making the experience more
+	continuous and fluid for the user.-->`
+});
 
 
 //Go to Portfolio
@@ -89,7 +149,7 @@ footer_logo.addEventListener('click', () => {
 
 let icon_alarm_left = document.querySelector('.icon_alarm_left');
 let icon_alarm_right = document.querySelector('.icon_alarm_right');
-let small_alarm_needle = document.querySelector('.small_alarm_needle');
+let truck = document.querySelector('.second_div_truck');
 let second_div_pen = document.querySelector('.second_div_pen');
 let second_div_ruler = document.querySelector('.second_div_ruler');
 
@@ -106,7 +166,7 @@ window.addEventListener('scroll', () => {
 let expects_anim = () => {
 	icon_alarm_left.classList.add('icon_alarm_left_anim');
 	icon_alarm_right.classList.add('icon_alarm_right_anim');
-	small_alarm_needle.classList.add('small_alarm_needle_anim');
+	truck.classList.add('second_div_truck_anim');
 	second_div_pen.classList.add('second_div_pen_anim');
 	second_div_ruler.classList.add('second_div_ruler_anim');
 }; 
