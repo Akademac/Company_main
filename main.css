@@ -122,6 +122,24 @@ a {
 	text-decoration: none;
 	color: var(--mainWhite);
 }
+
+#flags {
+	width: 10rem;
+	height: 2rem;
+	position: fixed;
+	right: 3rem;
+	top: 35rem;
+	z-index: 1000;
+	text-align: center;
+	cursor: pointer;
+}
+
+#flags > img {
+	width: 2.5rem;
+	height: 1.5rem;
+	box-shadow: 2px 2px 2px  black;
+}
+
 /*Home Div*/
 
 #home_div {
@@ -544,8 +562,15 @@ i {
 	width: 100%;
 }
 
+#about_us_homeDiv_desc > h2 {
+	font-size: 2rem;
+}
+
 #about_us_homeDiv_desc > p {
 	margin-bottom: 3rem;
+	font-size: 1.2rem;
+	width: 30rem;
+	line-height: 1.4;
 }
 
 #about_us_homeDiv_port, #about_us_homeDiv_cont {
@@ -574,12 +599,12 @@ i {
 
 #main_cloud {
 	float: right;
-	width: 100px;
-	height: 65px;
+	width: 70px;
+	height: 70px;
 	display: block;
 	margin-right: -10rem;
 	margin-top: 12rem;
-	margin-left: 8rem;
+	margin-left: 12rem;
 	animation-name: go_cloud;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
@@ -628,7 +653,7 @@ i {
 	height: 30rem;
 	margin: 2rem auto;
 	display: grid;
-	grid-template-columns: 41% 69%;
+	grid-template-columns: 41% 59%;
 }
 
 #con_first {
@@ -637,7 +662,7 @@ i {
 }
 
 #con_first > h2 {
-	color: var(--btnBlue);
+	color: black;
 	font-size: 2rem;
 }
 
@@ -696,7 +721,7 @@ i {
 
 #con_form > input {
 	border-radius: 5px;
-	width: 15rem;
+	width: 13rem;
 	height: 2rem;
 	border: none;
 	background: var(--lightgrey);
@@ -782,10 +807,11 @@ textarea:focus, input:focus {
 }
 
 #portfolio_nav {
-	width: 31rem;
+	width: 25rem;
 	height: 5rem;
 	margin: 0px auto;
-	background-color: var(--mainOrange);
+	color: var(--mainDBlue);
+	border: 1px solid var(--mainDBlue);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	border-radius: 50px;
@@ -805,27 +831,129 @@ textarea:focus, input:focus {
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 0px auto;
-	width: 30rem;
+	width: 25rem;
+	color: var(--mainDBlue);
 }
 
 #port_page_circle {
-	height: 3rem;
-	width: 3rem;
+	height: 3.5rem;
+	width: 3.5rem;
 	background-color: var(--mainDBlue);
 	border-radius: 100px;
 	margin: 0px;
 	position: absolute;
-	margin-top: 1rem;
-	margin-left: 2rem;
+	margin-top: .8rem;
+	margin-left: 1rem;
 }
 
 .port_page_port_div_dev {
-	width: 85%;
+	width: 90%;
 	height: 250rem;
 	margin: 10rem auto;
 	border-radius: 5px;
-	display: block;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
 }
+
+.port_page_line {
+	display: inline;
+	margin-top: -6rem;
+	left: 20%;
+	width: 60%;
+	position: absolute;
+	z-index: 1000;
+}
+
+
+.portfolio_page_comps_div {
+	position: relative;
+	z-index: 0;
+}
+
+.portfolio_page_comp {
+	width: 90%;
+	height: 75%;
+	margin-top: 5rem;
+	display: block;
+	left: 4.5%;
+	position: relative;
+	z-index: -1;
+}
+
+.imgs_container {
+	width: 63.5%;
+	height: 60.5%;
+	position: absolute;
+	z-index: 10;
+	top: 15%;
+	left: 17.6%;
+	overflow-y: scroll;
+	cursor: pointer;
+}
+
+.port_page_img_wrapper {
+	width: 63.5%;
+	height: 60.5%;
+	position: absolute;
+	background-color: black;
+	opacity: 1;
+	top: 15%;
+	left: 17.6%;
+	z-index: 11;
+	opacity: .8;
+	transition: 2s all;
+	color: white;
+	text-align: center;
+}
+
+.port_page_img_wrapper > h2 {
+	margin-top: 3rem;
+	font-size: 3rem;
+}
+
+.port_page_img_wrapper > i {
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+.imgs_container::-webkit-scrollbar {
+	display: none;
+}
+
+.imgs_container > img {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .port_page_port_div_des {
 	width: 85%;
@@ -845,107 +973,7 @@ textarea:focus, input:focus {
 	display: none;
 }
 
-/* Portfolio page sites */
 
-.port_page_comp {
-	width: 95%;
-	height: 50rem;
-	background-image: url('Images/port_page_comp.png');
-	background-size: 100%; 
-	margin: 15rem auto;
-	background-repeat: no-repeat;
-	z-index: -100;
-}
-
-#worldTraverse, #restaurant, #musicAsLife, #allAboutRock {
-	width: 71%;
-	height: 35rem;
-	margin: 2rem auto;
-	overflow-y: scroll;
-	padding-top: 2rem;
-	position: relative;
-}
-
-#worldTraverse::-webkit-scrollbar,
-#restaurant::-webkit-scrollbar,
-#musicAsLife::-webkit-scrollbar, 
-#allAboutRock::-webkit-scrollbar {
-	display: none;
-  }
-
-.port_sites {
-	width: 100%;
-	height: 100%;
-	margin-top: -5px;
-}
-
-.port_page_grey_stripe {
-	width: 59%;
-	left: 20.5%;
-	height: .48rem;
-	background-color: rgb(192, 191, 191);
-	z-index: 101;
-	position: absolute;
-	margin-top: .06rem;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-.port_page_black_stripe {
-	width: 58%;
-	left: 21%;
-	height: 1.3rem;
-	background-color: rgb(3, 3, 3);
-	z-index: 100;
-	position: absolute;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-	margin-top: .42rem;
-}
-
-.port_page_grey_stripe_mini {
-	width: 100%;
-	height: 1.8px;
-	background: rgb(54, 54, 54);
-	margin-top: .14rem;
-}
-
-.div_galery_over {
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	position: absolute;
-	/* left: 50%;
-	top: 30%;
-	transform: translate(50, 50); */
-	opacity: .85;
-	transition: .5s all;
-	cursor: pointer;
-	overflow: hidden;
-	margin-top: -.5rem;
-	text-align: center;
-	padding-top: 22%;
-}
-
-.port_page_sites_h2,  .port_page_sites_p {
-	color: var(--mainWhite);
-}
-
-.port_page_sites_h2 {
-	font-size: 2.5rem;
-}
-
-.fa-arrow-down {
-	margin-top: 2rem;
-}
-
-.div_galery_over:hover {
-	opacity: 0;
-}
-
-.div_galery_over:scroll {
-	opacity: 0;
-}
 
 													/* Media Query */
 

@@ -89,27 +89,23 @@ portfolio_nav.addEventListener('click', () => {
     }
 })
 
-//Portfolio Galery
+let port_page_img_wrapper = document.querySelectorAll('.port_page_img_wrapper');
+let imgs_container = document.querySelectorAll('.imgs_container');
 
-// let world_traverse_galery = document.querySelector('#worldTraverse_1')
+port_page_img_wrapper.forEach(e => {
+    e.addEventListener('mouseover', ee => {
+        e.style.display = 'none';
+    })
+})
 
-// let gal = 1;
+imgs_container.forEach(e => {
+    e.addEventListener('mouseout',() => {
+        port_page_img_wrapper.forEach(ee => {
+            ee.style.display = 'block';
+        })
 
-// let interval;
-
-// interval = setInterval(() => {
-// 	if( x > 8) {
-// 		x = 1;
-// 	}
-// 	else {
-// 		world_traverse_galery.src = `Images/Portfolio_page/Sites/worldTraverse_${x}.jpg`;
-// 		x++;
-// 	}
-// }, 2000)
-
-// if(x === 10) {
-// 	clearInterval(interval);
-// };
+    })
+})
 
 
 // Footer Logo
