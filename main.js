@@ -66,14 +66,14 @@ let x = 1
 let interval;
 
 interval = setInterval(() => {
-	if( x > 3) {
+	if( x > 10) {
 		x = 1;
 	}
 	else {
 		portfolio_img.src = `Images/port_img_${x}.jpg`;
 		x++;
 	}
-}, 2000)
+}, 1500)
 
 if(x === 10) {
 	clearInterval(interval);
@@ -116,9 +116,26 @@ services_single_page.addEventListener('mouseover', () => {
 services_single_page.addEventListener('mouseout', () => {
 	services_single_page_p.innerHTML = `A single page website is one that fits on a single page.
 	Single page websites are fully loaded in the initial page
-	 load or...<!-- page zones are replaced with new page fragments 
+	 load or page zones are replaced with...<!-- new page fragments 
    loaded from server on demand, making the experience more
 	continuous and fluid for the user.-->`
+});
+
+let logo_design = document.querySelector('#logo_design');
+let logo_design_p = document.querySelector('#logo_design_p');
+
+logo_design.addEventListener('mouseover', () => {
+	logo_design_p.innerHTML = `The logo plays a very important role when
+	it comes to the success of your business.
+	We deliever a professionaly designed logo
+	 that will make your brand stand out among others.`;
+});
+
+logo_design.addEventListener('mouseout', () => {
+	logo_design_p.innerHTML = `The logo plays a very important role when
+	it comes to the success of your business.
+	We deliever a professionaly designed logo... <!--
+	 that will make your brand stand out among others -->`;
 });
 
 let service_branding = document.querySelector('#service_branding');
@@ -136,8 +153,8 @@ service_branding.addEventListener('mouseover', () => {
 service_branding.addEventListener('mouseout', () => {
 	service_branding_p.innerHTML = `Brand design is all about creating a brand identity that
 	 perfectly reflects your brand.
-	We can create elements that shape your company’s branding design and 
-	represent your brand’s personality...<!-- In addition to a logo, branding design can include marketing collateral, 
+	We can create elements that shape your company’s...<!--  branding design and 
+	represent your brand’s personalityIn addition to a logo, branding design can include marketing collateral, 
 	websites, menus, uniforms and even more.-->`;
 });
 

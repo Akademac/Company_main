@@ -599,16 +599,9 @@ i {
 
 #main_cloud {
 	float: right;
-	width: 70px;
-	height: 70px;
+	width: 30rem;
+	height: 30rem;
 	display: block;
-	margin-right: -10rem;
-	margin-top: 12rem;
-	margin-left: 12rem;
-	animation-name: go_cloud;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
 }
 
 /* About Us second Div */
@@ -851,7 +844,7 @@ textarea:focus, input:focus {
 	width: 90%;
 	height: 250rem;
 	margin: 10rem auto;
-	margin-top: 2rem;
+	margin-top: 5rem;
 	border-radius: 5px;
 	display: grid;
 	grid-template-rows: repeat(5, 1fr);
@@ -1241,7 +1234,6 @@ strong {
 	#second_div_pen {
 		margin-left: -15rem;
 		margin-top: .5rem;
-	
 	}
 	
 /*Third Div*/
@@ -1475,6 +1467,12 @@ strong {
 		margin: 0px auto;
 	} 
 
+	#flags {
+		position: fixed;
+		right: -3rem;
+		top: 30rem;
+	}
+
 /* Portfolio  */
 
 	#portfolio_h {
@@ -1638,10 +1636,6 @@ strong {
 		margin: 10rem auto;
 		grid-template-columns: repeat(1, 1fr);
 	}
-
-
-	
-
 }
 
 @media screen and (max-width: 700px) {
@@ -1689,6 +1683,10 @@ strong {
 
 	#con_form > textarea {
 		width: 12rem;
+	}
+
+	#portfolio_desc h2 {
+		font-size: 1.5rem;
 	}
 
 	/* Portfolio Page */
@@ -1742,6 +1740,10 @@ strong {
 
 @media screen and (max-width: 400px) {
 
+	.services_divs {
+		width: 18rem;
+	}
+
 	/* Portfolio Page */
 	
 	#port_page_main_div {
@@ -1760,7 +1762,6 @@ strong {
 		width: 90%;
 		height: 180rem;
 		margin: 10rem auto;
-		margin-top: -5rem;
 		margin-bottom: -8rem;
 		border-radius: 5px;
 		grid-template-rows: repeat(5, 1fr);
@@ -1815,6 +1816,20 @@ strong {
 	}
 
 }
+
+@media screen and (max-width: 325px) {
+	#second_div_third {
+		height: 37rem;
+	}
+
+	.services_divs {
+		width: 17rem;
+	}
+
+	#services_web_development {
+		height: 33rem;
+	}
+} 
 
 
 
