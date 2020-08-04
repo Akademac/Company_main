@@ -807,11 +807,11 @@ textarea:focus, input:focus {
 }
 
 #portfolio_nav {
-	width: 25rem;
+	width: 16rem;
 	height: 5rem;
 	margin: 0px auto;
 	color: var(--mainDBlue);
-	border: 1px solid var(--mainDBlue);
+	border: 3px solid var(--mainDBlue);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	border-radius: 50px;
@@ -828,11 +828,12 @@ textarea:focus, input:focus {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 	margin: 0px auto;
-	width: 25rem;
+	width: 17rem;
 	color: var(--mainDBlue);
+	margin-left: 0.1rem;
 }
 
 #port_page_circle {
@@ -843,13 +844,14 @@ textarea:focus, input:focus {
 	margin: 0px;
 	position: absolute;
 	margin-top: .8rem;
-	margin-left: 1rem;
+	margin-left: .7rem;
 }
 
 .port_page_port_div_dev {
 	width: 90%;
 	height: 250rem;
 	margin: 10rem auto;
+	margin-top: 2rem;
 	border-radius: 5px;
 	display: grid;
 	grid-template-rows: repeat(5, 1fr);
@@ -911,6 +913,10 @@ textarea:focus, input:focus {
 	font-size: 3rem;
 }
 
+.port_page_img_wrapper > p {
+	font-size: 1.5;
+}
+
 .port_page_img_wrapper > i {
 	font-size: 3rem;
 	margin-top: 2rem;
@@ -925,48 +931,61 @@ textarea:focus, input:focus {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	margin-top: -2px;
+	margin-bottom: -5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .port_page_port_div_des {
-	width: 85%;
-	height: 50rem;
+	width: 95%;
+	height: 65rem;
 	margin: 10rem auto;
 	border-radius: 5px;
-	border: 1px solid red;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
 	display: none;
+	margin-top: 2rem;
+
 }
 
-.active {
+
+.s_logoes {
+	width: 17rem;
+	height: 17rem;
+	text-align: center;
 	display: block;
+	margin: 0rem auto;
+	border: 1px solid black;
+	margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active {
+	display: grid;
 }
 
 .inactive {
@@ -1025,10 +1044,11 @@ textarea:focus, input:focus {
 		grid-template-columns: none;
 		grid-template-rows: repeat(2, 1fr);
 		text-align: center;
+		margin: 0px auto;
 	}
 
-	#about_us_homeDiv > p {
-		margin: 0px auto;
+	#about_us_homeDiv_desc > p {
+		margin: 3rem auto;
 	}
 
 	#main_cloud {
@@ -1038,18 +1058,44 @@ textarea:focus, input:focus {
 		margin: 12rem auto 2rem auto;
 	}
 
+		
 	/* Portfolio Page */
 
-	/* .port_page_comp {
-		width: 95%;
-		height: 30rem;
-		background-image: url('Images/port_page_comp.png');
-		background-size: 100%; 
-		margin: 15rem auto;
-		background-repeat: no-repeat;
-		z-index: -100;
+	#port_page_main_div {
+		width: 90%;
+		height: 27rem;
+		margin: 1rem auto;
+		grid-template-columns: none;
+		text-align: center;
 	}
-	 */
+
+	#port_page_desc {
+		margin-left: 0rem;
+	}
+	
+	#port_page_desc > p {
+		width: 28rem;
+		font-size: 1.1rem;
+		margin: 0px auto;
+	}
+	
+	.portfolio_page_comp {
+		width: 90%;
+		height: 65%;
+	}
+
+	.imgs_container {
+		width: 63.5%;
+		height: 53.5%;
+		top: 13.50%;
+	}
+	
+	.port_page_img_wrapper {
+		width: 63.5%;
+		height: 53.5%;
+		top: 13.5%;
+	}
+	
 }
 
 strong {
@@ -1328,9 +1374,38 @@ strong {
 	#services {
 		height: 105rem;
 	}
+
+	/* Portfolio Page */
+
+	.portfolio_page_comp {
+		width: 90%;
+		height: 55%;
+	}
+
+	.imgs_container {
+		width: 63.5%;
+		height: 45%;
+		top: 13.50%;
+	}
 	
+	.port_page_img_wrapper {
+		width: 63.5%;
+		height: 45%;
+		top: 13.5%;
+	}
+
+	.port_page_line {
+		margin-top: -10rem;
+	}
+
 	
-	
+	.port_page_port_div_des {
+		width: 95%;
+		height: 105rem;
+		margin: 10rem auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1462,10 +1537,6 @@ strong {
 	.services_divs {
 		width: 18rem;
 	}
-/* 
-	#services_divs .services_divs:nth-child(1) {
-		height: ;
-	} */
 
 /*Footer*/
 
@@ -1525,6 +1596,52 @@ strong {
 		margin: 7rem auto;
 	}
 
+	/* Portfolio Page */
+
+	
+	.portfolio_page_comp {
+		width: 90%;
+		height: 45%;
+		margin-bottom: -10rem;
+	}
+
+	.imgs_container {
+		width: 63.5%;
+		height: 37.5%;
+		top: 13%;
+	}
+	
+	.port_page_img_wrapper {
+		width: 63.5%;
+		height: 37.5%;
+		top: 13%;
+	}
+
+	.port_page_line {
+		margin-top: -12rem;
+	}
+
+	.port_page_img_wrapper > h2 {
+		margin-top: 2rem;
+		font-size: 2rem;
+	}
+	
+	.port_page_img_wrapper > i {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+
+
+	.port_page_port_div_des {
+		width: 95%;
+		height: 235rem;
+		margin: 10rem auto;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+	
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1554,6 +1671,14 @@ strong {
 		margin-top: 1rem;
 		margin-left: 0rem;
 	}
+
+	
+	.port_page_port_div_des {
+		width: 95%;
+		height: 235rem;
+		margin: 10rem auto;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 
@@ -1565,9 +1690,131 @@ strong {
 	#con_form > textarea {
 		width: 12rem;
 	}
+
+	/* Portfolio Page */
+
+	#port_page_desc > p {
+		width: 24rem;
+		font-size: 1.1rem;
+		margin-bottom: 4rem;
+	}
+	
+	.portfolio_page_comp {
+		width: 90%;
+		height: 35%;
+		margin-bottom: -10rem;
+	}
+	
+	.imgs_container {
+		width: 63.5%;
+		height: 28.5%;
+		top: 12%;
+	}
+		
+	.port_page_img_wrapper {
+		width: 63.5%;
+		height: 28.5%;
+		top: 12%;
+	}
+	
+	.port_page_line {
+		margin-top: -14rem;
+	}
+	
+	.port_page_img_wrapper > h2 {
+		margin-top: 2rem;
+		font-size: 1.5rem;
+	}
+		
+	.port_page_img_wrapper > i {
+		font-size: 2rem;
+		margin-top: 1.5rem;
+	}
+
+	
+	.port_page_port_div_des {
+		width: 95%;
+		height: 235rem;
+		margin: 10rem auto;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
+@media screen and (max-width: 400px) {
 
+	/* Portfolio Page */
+	
+	#port_page_main_div {
+		height: 32rem;
+	}
+
+	
+	#portfolio_nav {
+		width: 16rem;
+		height: 5rem;
+		margin: 5rem auto;
+	}
+
+
+	.port_page_port_div_dev {
+		width: 90%;
+		height: 180rem;
+		margin: 10rem auto;
+		margin-top: -5rem;
+		margin-bottom: -8rem;
+		border-radius: 5px;
+		grid-template-rows: repeat(5, 1fr);
+	}
+	
+
+	#port_page_desc > p {
+		width: 17rem;
+		font-size: 1.1rem;
+	}
+	
+	.portfolio_page_comp {
+		width: 90%;
+		height: 30%;
+	}
+	
+	.imgs_container {
+		width: 63.5%;
+		height: 25%;
+		top: 15%;
+	}
+		
+	.port_page_img_wrapper {
+		width: 63.5%;
+		height: 25%;
+		top: 15%;
+	}
+	
+	.port_page_line {
+		margin-top: -10rem;
+	}
+	
+	.port_page_img_wrapper > h2 {
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.port_page_img_wrapper > p {
+		font-size: .8rem;
+	}
+		
+	.port_page_img_wrapper > i {
+		font-size: 1rem;
+		margin-top: .5rem;
+	}
+
+	.port_page_port_div_des {
+		width: 95%;
+		height: 235rem;
+		margin: 10rem auto;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
 
 
 
