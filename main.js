@@ -39,6 +39,17 @@ setTimeout(() => {
 	desk.src = 'Images/desk.png'
 }, 4800);
 
+if(window.matchMedia("(max-width: 800px)").matches) { //great f
+	setTimeout(() => {
+		desk.src = 'Images/desk.png'
+	}, 800);
+}
+else {
+	setTimeout(() => {
+		desk.src = 'Images/desk.png'
+	}, 4800);
+}
+
 //second div
 
 let second_div_third = document.querySelector('#second_div_third');
@@ -191,8 +202,6 @@ let second_div_ruler = document.querySelector('.second_div_ruler');
 
 window.addEventListener('scroll', () => {
 	let scrollY = window.scrollY;
-	console.log(scrollY);
-
 	if(scrollY > 500) {
 		expects_anim();
 	}
