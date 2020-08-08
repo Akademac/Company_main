@@ -569,7 +569,7 @@ i {
 #about_us_homeDiv_desc > p {
 	margin-bottom: 3rem;
 	font-size: 1.2rem;
-	width: 90%;
+	width: 28rem;
 	line-height: 1.4;
 }
 
@@ -1660,6 +1660,10 @@ strong {
 
 	#about_us_steps_div {
 		width: 100%;
+	}
+
+	#about_us_homeDiv_desc > p {
+		width: 90%;
 	}
 
 	#first_step, #third_step {
