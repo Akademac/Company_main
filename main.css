@@ -1895,9 +1895,13 @@ strong {
 	}
 }
 
-@media screen and (max-width: 430) {
+@media screen and (max-width: 430px) {
 	#about_us_homeDiv_desc > p {
 		font-size: .8rem;
+	}
+
+	.steps_desc > p {
+		width: 13rem;
 	}
 } 
 
@@ -1911,7 +1915,6 @@ strong {
 	/* About Us Page*/
 
 	#about_us_homeDiv_desc > p {
-
 		line-height: 1.1;
 	}
 	
