@@ -569,7 +569,7 @@ i {
 #about_us_homeDiv_desc > p {
 	margin-bottom: 3rem;
 	font-size: 1.2rem;
-	width: 30rem;
+	width: 90%;
 	line-height: 1.4;
 }
 
@@ -1760,7 +1760,6 @@ strong {
 	/* About Us Page*/
 
 	#about_us_homeDiv_desc > p {
-		width: 25rem;
 	}
 
 	#main_cloud {
@@ -1800,6 +1799,10 @@ strong {
 	#about_us_homeDiv_desc {
 		margin-top: -2rem;
 	}
+
+	#about_us_homeDiv_desc > p {
+		font-size: 1rem;
+	}
 	
 	#main_cloud {
 		width: 20rem;
@@ -1810,7 +1813,6 @@ strong {
 		font-size: 1.7rem;
 	}
 	
-
 	#about_us_steps_div {
 		margin: -6rem auto;
 	}
@@ -1892,6 +1894,12 @@ strong {
 	}
 }
 
+@media screen and (max-width: 430) {
+	#about_us_homeDiv_desc > p {
+		font-size: .8rem;
+	}
+} 
+
 @media screen and (max-width: 400px) {
 
 	.services_divs {
@@ -1902,7 +1910,7 @@ strong {
 	/* About Us Page*/
 
 	#about_us_homeDiv_desc > p {
-		width: 18rem;
+
 		line-height: 1.1;
 	}
 	
@@ -2011,7 +2019,6 @@ strong {
 	/* About Us Page*/
 
 	#about_us_homeDiv_desc > p {
-		width: 15rem;
 	}
 	
 	#main_cloud {
