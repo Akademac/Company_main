@@ -592,7 +592,6 @@ i {
 	cursor: pointer;
 }
 
-
 #about_us_homeDiv_cont {
 	margin-left: 1rem;
 }
@@ -604,102 +603,106 @@ i {
 	display: block;
 }
 
-/* About Us second Div */
-
-#about_us_fdiv {
-	width: 100%;
-	height: 100rem;
-	text-align: center;
-	margin: 7rem auto;
-	margin-bottom: 0px;
-}
-
-#about_us_fdiv > p {
-	margin-top: 5rem;
-}
+/* About_us_steps */
 
 #about_us_steps_div {
-	width: 80%;
-	margin: 5rem auto;
-	margin-bottom: 0px;
-	height: 80rem;
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
+	width: 90%;
+	height: 60rem;
+	margin: 2rem auto;
 }
 
+#about_us_steps_div_h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
 
-.steps:nth-child(1) {
+#about_us_steps {
+	width: 100%;
+	height: 50rem;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.steps_desc > p {
+	width: 24rem;
+}
+
+.about_us_steps > img {
+	max-width: 10rem;
+	max-height: 10rem;
+	display: block;
+	margin: 1rem auto;
+}
+
+#first_step {
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+#first_step > div {
+	padding-top: 1rem;
+}
+
+#second_step {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
 }
 
-.steps:nth-child(2) {
+#second_step_div {
+	text-align: right;
+	width: 98%;
+	padding-top: 1rem;
+}
+
+#second_step_div > p {
+	float: right;
+	margin-top: -.2rem;
+}
+
+#second_arrow {
+	margin-left: 7rem;
+	margin-top: -1.1em;
+}
+
+#third_step {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
-	margin-top: -10rem;
 }
 
-.steps:nth-child(3) {
-	display: grid;
-	grid-template-columns: 20% 60% 20%;
-	margin-top: -16rem;
-
-}
-
-.steps:nth-child(4) {
-	display: grid;
-	grid-template-columns: 20% 60% 20%;
-	margin-top: -20rem;
-
-}
-
-.steps:nth-child(1) > div {
-	float: left;
-}
-
-#second_arrow, #fourth_arrow {
-	width: 15rem;
-	height: 15rem;
-	margin-left: 5rem;
-	margin-top: -6rem;
+#third_step > div {
+	padding-top: 1rem;
 }
 
 #third_arrow {
-	width: 17rem;
-	height: 17rem;
-	margin-left: -10rem;
-	margin-top: -8rem;
+	margin-right: 6rem;
+	margin-top: -1.1rem;
+	max-width: 11rem;
+	max-height: 11rem;
 }
 
-#first_step, #third_step {
-	text-align: left;
-	margin-left: -1rem;
+#fourth_step {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	margin-top: 1rem;
 }
 
-#first_step > p, #third_step > p {
-	width: 24rem;
-}
-
-#second_step, #fourth_step {
+#fourth_step_div {
 	text-align: right;
-	margin-right: 3rem;
+	width: 98%;
+	padding-top: 1rem;
 }
 
-#second_step > p, #fourth_step > p {
-	width: 24rem;
+#fourth_step_div > p {
 	float: right;
+	margin-top: -.2rem;
 }
 
-#first_arrow {
-	display: block;
-	float: right;
+#fourth_arrow {
+	margin-left: 7rem;
+	margin-top: -.8rem;
 }
 
- 
-.steps img {
-	width: 10rem;
-	height: 10rem;
-}
 
 /* Footer */
 
@@ -735,7 +738,6 @@ i {
 
 #con_first {
 	margin-left: 4rem;
-
 }
 
 #con_first > h2 {
@@ -1021,9 +1023,7 @@ textarea:focus, input:focus {
 	text-align: center;
 	display: none;
 	margin-top: 2rem;
-
 }
-
 
 .s_logoes {
 	width: 17rem;
@@ -1038,7 +1038,6 @@ textarea:focus, input:focus {
 
 .s_logoes:hover {
 	box-shadow: 2px 2px 2px grey;
-
 }
 
 .active {
@@ -1087,15 +1086,16 @@ textarea:focus, input:focus {
 		text-align: center;
 	}
 
+	/* About Us Page*/
+
 	#about_us_homeDiv_desc {
 		margin: 4rem auto;
 		width: 80%;
-
 	}
 
 	#about_us_homeDiv {
 		width: 100%;
-		height: 50rem;
+		height: 60rem;
 		z-index: -100;
 		display: grid;
 		grid-template-columns: none;
@@ -1109,13 +1109,11 @@ textarea:focus, input:focus {
 	}
 
 	#main_cloud {
-		width: 100px;
-		height: 65px;
 		display: block;
-		margin: 12rem auto 2rem auto;
+		margin: 0px auto;
 	}
 
-		
+
 	/* Portfolio Page */
 
 	#port_page_main_div {
@@ -1152,7 +1150,6 @@ textarea:focus, input:focus {
 		height: 53.5%;
 		top: 13.5%;
 	}
-	
 }
 
 strong {
@@ -1351,23 +1348,20 @@ strong {
 		margin: 2rem auto;
 	}
 
-	/*About Us page*/
-	
-	#about_us_homeDiv {
-		width: 100%;
-		height: 50rem;
-		z-index: -100;
-		display: grid;
-		grid-template-columns: none;
-		grid-template-rows: repeat(2, 1fr);
-		text-align: center;
+	/* About Us page */
+
+	#second_arrow,
+	#third_arrow,
+	#fourth_arrow {
+		display: none;
 	}
-	
-	#main_cloud {
-		width: 80px;
-		height: 45px;
-		display: block;
-		margin: 12rem auto 2rem auto;
+
+	#second_step {
+		grid-template-columns: 80% 20%;
+	}
+
+	#fourth_step {
+		grid-template-columns: 80% 20%;
 	}
 
 	/* Contact Page */
@@ -1454,7 +1448,6 @@ strong {
 		margin-top: -10rem;
 	}
 
-	
 	.port_page_port_div_des {
 		width: 95%;
 		height: 105rem;
@@ -1463,6 +1456,25 @@ strong {
 	}
 
 }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	/* About Us Page Steps */
+	#first_step_div, #third_step_div {
+		margin-left: 2rem;
+	}
+
+	#second_step_div, #fourth_step_div {
+		margin-right: 2rem;
+	}
+}
+
+
+
+
 
 @media screen and (max-width: 800px) {
 
@@ -1643,24 +1655,30 @@ strong {
 		cursor: pointer;
 	}
 
-	/* About Us page */
-		
-	#main_cloud {
-		width: 40px;
-		height: 25px;
-		margin: 12rem auto 2rem auto;
+	/* About Us Page */
+
+	#about_us_steps_div {
+		width: 100%;
 	}
 
-	#about_us_fdiv {
-		width: 60%;
-		height: 45rem;
-		text-align: center;
-		margin: 7rem auto;
+	#first_step, #third_step {
+		grid-template-columns: 40% 60%;
+	}
+
+	#second_step, #fourth_step {
+		grid-template-columns: 60% 40%;
+	}
+
+	#first_step_div, #third_step_div {
+		margin-left: -1rem;
+	}
+
+	#second_step_div, #fourth_step_div {
+		margin-right: -1rem;
 	}
 
 	/* Portfolio Page */
 
-	
 	.portfolio_page_comp {
 		width: 90%;
 		height: 45%;
@@ -1702,6 +1720,7 @@ strong {
 	}
 }
 
+
 @media screen and (max-width: 700px) {
 		
 	#con_top_left_cloud {
@@ -1737,6 +1756,29 @@ strong {
 		margin: 10rem auto;
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+	/* About Us Page*/
+
+	#about_us_homeDiv_desc > p {
+		width: 25rem;
+	}
+
+	#main_cloud {
+		width: 25rem;
+		height: 25rem;
+	}
+
+	.steps_desc > p {
+		width: 18rem;
+		font-size: .9rem;
+		margin-top: -.5rem;
+	}
+	
+	.about_us_steps > img {
+		max-width: 8rem;
+		max-height: 8rem;
+	}
+
 }
 
 
@@ -1752,6 +1794,54 @@ strong {
 	#portfolio_desc h2 {
 		font-size: 1.5rem;
 	}
+
+	/* About Us Page*/
+
+	#about_us_homeDiv_desc {
+		margin-top: -2rem;
+	}
+	
+	#main_cloud {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	#about_us_steps_div_h2 {
+		font-size: 1.7rem;
+	}
+	
+
+	#about_us_steps_div {
+		margin: -6rem auto;
+	}
+	
+	.steps_desc {
+		margin-top: -1.3rem;
+	}
+
+	.steps_desc > p {
+		width: 15rem;
+		font-size: .8rem;
+		margin-top: -.5rem;
+	}
+	
+	.about_us_steps > img {
+		max-width: 6rem;
+		max-height: 6rem;
+	}
+	
+	#third_step > div {
+		margin-left: .6rem;
+	}
+
+	#first_step > div {
+		margin-left: .1rem;
+	}
+
+	#fourth_step {
+		margin-top: -.7rem;
+	}
+
 
 	/* Portfolio Page */
 
@@ -1807,6 +1897,41 @@ strong {
 	.services_divs {
 		width: 18rem;
 	}
+
+	
+	/* About Us Page*/
+
+	#about_us_homeDiv_desc > p {
+		width: 18rem;
+		line-height: 1.1;
+	}
+	
+	#main_cloud {
+		width: 18rem;
+		height: 18rem;
+	}
+
+	/* About Us Page*/
+	
+	.steps_desc > p {
+		width: 10rem;
+		font-size: .8rem;
+		margin-top: -.5rem;
+	}
+
+	.steps_desc > h2 {
+		font-size: 1rem;
+	}	
+
+	.about_us_steps > img {
+		max-width: 6rem;
+		max-height: 6rem;
+	}
+
+	.steps_desc {
+		margin-top: -2rem;
+	}
+	
 
 	/* Portfolio Page */
 	
@@ -1882,6 +2007,18 @@ strong {
 }
 
 @media screen and (max-width: 325px) {
+
+	/* About Us Page*/
+
+	#about_us_homeDiv_desc > p {
+		width: 15rem;
+	}
+	
+	#main_cloud {
+		width: 15rem;
+		height: 15rem;
+	}
+	
 	#second_div_third {
 		height: 37rem;
 	}
