@@ -2017,9 +2017,6 @@ strong {
 @media screen and (max-width: 325px) {
 
 	/* About Us Page*/
-
-	#about_us_homeDiv_desc > p {
-	}
 	
 	#main_cloud {
 		width: 15rem;
