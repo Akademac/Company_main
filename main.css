@@ -807,6 +807,10 @@ i {
 	padding-left: 2rem;
 }
 
+#con_form > input, #textarea {
+	color: var(--btnBlue);
+}
+
 #con_form > input:not(:first-child) {
 	margin-left: 1.5rem;
 }
