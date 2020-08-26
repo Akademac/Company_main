@@ -215,3 +215,26 @@ let expects_anim = () => {
 	second_div_pen.classList.add('second_div_pen_anim');
 	second_div_ruler.classList.add('second_div_ruler_anim');
 }; 
+
+//links
+
+let links = document.querySelectorAll('.links');
+
+links.forEach(e => {
+	e.addEventListener('click', ee => {
+		let link = ee.target.dataset.links;
+		if(link == 1) {
+			window.open('https://www.facebook.com/Webeldes-613056809352153')
+		}
+		else if(link == 2) {
+			window.open('https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fwebeldes2020%3Figshid%3D1qwfoxahqmcrn%26fbclid%3DIwAR3dzGXIbBJygc0fg6D4GFW9KohNyjmDdxivL31GqpbVu1CTxP7-8WXq53s&h=AT1JTpVAMDbit8Oa6eH3UGSREl5er4TC6DRtRdIJBG1YburN8ffqYIYqrcdbcp6tEbZ46bT3qZOWOaP-IYXR-fqum8A-P5dVn6d2m6aNRU9_27DrK-4zBZTKVIq5cntL_5sdEg')
+		}
+		else if(link == 3) {
+			window.open('https://www.linkedin.com/company/webeldes/');
+		} 
+		else if(link == 4) {
+			window.open('https://twitter.com/webeldes');
+		}
+
+	})
+})
