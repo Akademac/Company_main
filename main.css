@@ -2187,5 +2187,7 @@ strong {
 
 
 @media screen and (min-width: 2000px) {
-	body: background-color: red;
-}
+	body {
+		background-color: red;
+	}
+	} 
