@@ -183,7 +183,7 @@ portfolio_btn.addEventListener('click', () => {
 let main_btn = document.querySelector('#main_btn');
 
 main_btn.addEventListener('click', () => {
-	window.open('contact.html', '_self');
+	window.open('contact.php', '_self');
 });
 
 let footer_logo = document.querySelector('#footer_logo');

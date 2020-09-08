@@ -44,7 +44,7 @@ portf_btn.addEventListener('click', () => {
 
 
 cont_btn.addEventListener('click', () => {
-    window.open('contact.html', '_self')
+    window.open('contact.php', '_self')
 })
 
 //links
