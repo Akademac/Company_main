@@ -855,6 +855,23 @@ textarea:focus, input:focus {
 	background: var(--mainOrange);
 }
 
+#mail_sent {
+	margin: 0px auto;
+	width: 40%;
+	height: 40%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+#mail_sent_p {
+	width: 80%;
+	text-align: center;
+	margin: 0rem auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
 						/* Portfolio Page */
 
 #top_right_cloud {
@@ -1905,6 +1922,12 @@ strong {
 		margin: 10rem auto;
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+	/* #mail_sent {
+		width: 50rem;
+		height: 50rem;
+	} */
+	
 }
 
 @media screen and (max-width: 430px) {
@@ -2161,3 +2184,8 @@ strong {
 
 }
 
+
+
+@media screen and (min-width: 2000px) {
+	body: background-color: red;
+}
