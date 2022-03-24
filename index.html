@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" id='html_tag'>
 <head>
 	<title>Webeldes</title>
 	<meta charset="utf-8" />
@@ -33,42 +33,47 @@
 	<div id='header'>
 		<img src="Images/logo.png" alt='Not Found' id='main_logo' />
 		<ul id='main_nav'>
-			<li class='main_nav'><a href='index.html'>Home</a></li>
-			<li class='main_nav'><a href='#second_div_h'>What to expect</a></li>
-			<li class='main_nav'><a href='#portfolio_h'>Portfolio</a></li>
-			<li class='main_nav'><a href='about_us.html'>About Us</a></li>
-			<li class='main_nav'><a href="#services_h">Services</a></li>
-			<li class='main_nav'><a href='contact.php'>Contact</a></li>
+			<li class='main_nav'><a class='trnsl trnsl_home_btn'>Home</a></li>
+			<li class='main_nav'><a class='trnsl wte'>What to expect</a></li>
+			<li class='main_nav'><a class='trnsl portfolio_btn'>Portfolio</a></li>
+			<li class='main_nav'><a class='trnsl gt_aboutus_page'>About Us</a></li>
+			<li class='main_nav'><a class='trnsl ser'>Services</a></li>
+			<li class='main_nav'><a class='trnsl gt_contact_page'>Contact</a></li>
 		</ul>
 		<img src='Images/burger_2.png' id="fa-bars" />
 	
 	</div>
 	<div id='mini_navigation' class='mini_navigation'>
 		<ul id='mini_nav'>
-			<li class='mini_nav'><a class='mini_nav_a' href='index.html'>Home</a></li>
-			<li class='mini_nav'><a class='mini_nav_a' href='#second_div_h'>What to expect</a></li>
-			<li class='mini_nav'><a class='mini_nav_a' href='#portfolio_h'>Portfolio</a></li>
-			<li class='mini_nav'><a class='mini_nav_a' href='about_us.html'>About Us</a></li>
-			<li class='mini_nav'><a class='mini_nav_a' href="#services_h">Services</a></li>
-			<li class='mini_nav'><a class='mini_nav_a' href='contact.php'>Contact</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl trnsl_home_btn'>Home</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl wte'>What to expect</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl portfolio_btn'>Portfolio</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl gt_aboutus_page'>About Us</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl ser'>Services</a></li>
+			<li class='mini_nav'><a class='mini_nav_a mini_trnsl gt_contact_page'>Contact</a></li>
 		</ul>
 	</div>
-	<!-- <span id='flags'>
-		<img src="Images/german_flag.gif" alt="not Found" title="click to translate" />
-	</span> -->
+	<span id='flags'>
+		<span class='flags' id='ger_flag' >Ger</span>
+		<span class='flags' id='srb_flag' >Srb</span>
+		<span class='flags' id='engl_flag'>Eng</span>
+
+	</span>
 <!-- Home div -->
+
+	<!-- <span style="width: 2rem; height: 2rem; border-radius: 5px; background-color: greenyellow; cursor: pointer; position: absolute; z-index: 2000;" id='test'></span> -->
 	
 	<div id='home_div'>
 		<div id='home_desc'>
-			<h1>Web Development</h1>
-			<h2>& Graphic Design Solutions</h2>
-			<p>We deliver successful web development and graphic design solutions, 
+			<h1 class='trnsl'>Web Development</h1>
+			<h2 class='trnsl'>& Graphic Design Solutions</h2>
+			<p class='trnsl'>We deliver successful web development and graphic design solutions, 
 				that will increase your business efficiency!
 				<br />
 				Our services are ranging from <strong style='color: black'>print design, 
 				web design, HTML/CSS/Javascript</strong> and much more. 
 			</p>
-			<div id='main_btn'>Get In Touch</div>
+			<div class='trnsl gt_contact_page' id='main_btn'>Get In Touch</div>
 		</div>	
 		<div id='main_ilustrtion'>
 			<img src="Images/desk_1.png" alt='Not Found' id='desk' />
@@ -79,7 +84,7 @@
 
 <!-- Second Div -->
 
-	<h2 id='second_div_h'>You Can Expect
+	<h2 id='second_div_h' class='trnsl'>You Can Expect
 	</h2>
 	<hr />
 	<div id='second_div'>
@@ -88,8 +93,8 @@
 			<img src="Images/second_div_pen.png" alt='Not Found' id='second_div_pen' class='second_div_pen' />
 			<img src="Images/second_div_ruler.png" alt='Not Found' id='second_div_ruler' class='second_div_ruler' />
 			
-			<h3>Professional Design </h3>
-			<p>Our team consists of highly professional and experienced designers and developers
+			<h3 class='trnsl'>Professional Design </h3>
+			<p class='sp trnsl'>Our team consists of highly professional and experienced designers and developers
 				, who will be able to meet any request you have.</p>	
 		</div>
 		<div class="second_div">
@@ -98,16 +103,16 @@
 			<img src="Images/qucik_delivery_car.png" alt="Not Found" id='second_div_truck' class='second_div_truck'>
 
 
-			<h3>Fast Delivery Time</h3>
-			<p>The first draft of your web site will be sent to you within 48h</p>		
+			<h3 class='trnsl'>Fast Delivery Time</h3>
+			<p class='sp trnsl'>The first draft of your web site will be sent to you within 48h</p>		
 		</div>
 		<div class="second_div"  id='second_div_third'>
 			<img src="Images/rewiew_icon_comp.png" alt='Not Found' id='icon_alarm' />
 			<!-- <img src="Images/rewiew_icon_comp.png" alt='Not Found' id='icon_alarm' /> -->
 			<img src="Images/rewiew_icon_left.png" alt='Not Found' id='icon_alarm_left' class='icon_alarm_left' />
 			<img src="Images/rewiew_icon_right.png" alt='Not Found' id='icon_alarm_right' class='icon_alarm_right' />
-			<h3>Unlimited Revision</h3>
-			<p id='second_div_third_p'>If you are not satisfied with your delivery,
+			<h3 class='trnsl'>Unlimited Revision</h3>
+			<p id='second_div_third_p'  class='sp trnsl'>If you are not satisfied with your delivery,
 					our team of designers will change everything you do not like...<!--y
 			even if it is the smallest thing, you have the opportunity for countless revisions--></p>	
 		</div>
@@ -116,7 +121,7 @@
 	
 <!-- Third Div -->
 
-	<h2 id='portfolio_h'>Our Previus Works</h2>
+	<h2 id='portfolio_h' class='trnsl'>Our Previus Works</h2>
 	<hr />
 	<div id='portfolio'>
 		<div id='portfolio_back'>
@@ -124,26 +129,26 @@
 			<img src="Images/port_img_1.jpg" id='portfolio_img' alt='Not Found' />
 		</div>
 		<div id='portfolio_desc'>
-			<h2>Portfolio that speaks for itself!</h2>
-			<p>	It is never easy to select just a few designs to display. Building a portfolio is often harder, more stressful and time-consuming than actual design.
+			<h2 class='trnsl'>Portfolio that speaks for itself!</h2>
+			<p class='trnsl'>	It is never easy to select just a few designs to display. Building a portfolio is often harder, more stressful and time-consuming than actual design.
 				Unfortunately, we couldn't include them all.
 				<br />
 				Take a look at some of our work and see for yourself the quality of our services and the expertise of our team.
 				We create <strong style="color: black;">advertising sites, portals, online stores, responsive web design,</strong> and <strong style="color: black;">SEO.</strong>
 			</p>
-			<div id='portfolio_btn'>Click for more</div>
+			<div id='portfolio_btn' class='trnsl trnsl_port portfolio_btn'>Click for more</div>
 		</div>
 	</div>
 
 <!-- Fourth Div -->
 
-	<h2 id='services_h'>Services</h2>
+	<h2 id='services_h' class='trnsl'>Services</h2>
 	<hr />
 	<div id='services'>
 		<div class='services_divs' id='services_web_development' >
 			<img src='Images\Services\web_dev.png' alt='NOt Found' />
-			<h2>Web Development</h2>
-			<div class='services_p' id='services_web_development_p'>
+			<h2 class='trnsl'>Web Development</h2>
+			<div class='services_p trnsl' id='services_web_development_p'>
 				We deliver fully functional and professionally designed websites 
 				and applications, that offer end users invariably perfect experience 
 				across...
@@ -151,17 +156,17 @@
 		</div>
 		<div class='services_divs'>
 			<img src='Images\Services\web_design.png' alt='NOt Found' />
-			<h2>Web Design</h2>
-			<div class='services_p'>
+			<h2 class='trnsl'>Web Design</h2>
+			<div class='services_p trnsl'>
 				We craft digital experiences that people love.
 				If you only need website design, we will answer
 				all your needs and make your website pop out.
 			</div>	
 		</div>
-		<div class='services_divs'>
+		<div class='services_divs' id='services_html'>
 			<img src='Images\Services\html-01.png' alt='NOt Found' />
-			<h2>HTML/CSS/JS</h2>
-			<div class='services_p'>
+			<h2 class='trnsl'>HTML/CSS/JS</h2>
+			<div class='services_p trnsl' id='services_html_p'>
 				If you have sketch, image or idea, contact as,
 				we will help you convert any design file: PSD, Sketch, Ai, 
 				Adobe XD into fully functional, simple code.
@@ -169,8 +174,8 @@
 		</div>
 		<div class='services_divs' id='services_single_page'>
 			<img src='Images\Services\single_page-01.png' alt='NOt Found' />
-			<h2>Single Page</h2>
-			<div class='services_p' id='services_single_page_p'>
+			<h2 class='trnsl'>Single Page</h2>
+			<div class='services_p trnsl' id='services_single_page_p'>
 				A single page website is one that fits on a single page.
 				 Single page websites are fully loaded in the initial page
 				  load or page zones are replaced with... <!-- new page fragments 
@@ -180,8 +185,8 @@
 		</div>
 		<div class='services_divs' id='logo_design'>
 			<img src='Images\Services\logo_design-01.png' alt='NOt Found' />
-			<h2>Logo Design</h2>
-			<div class='services_p'  id='logo_design_p'>
+			<h2 class='trnsl'>Logo Design</h2>
+			<div class='services_p trnsl'  id='logo_design_p'>
 				The logo plays a very important role when
 				 it comes to the success of your business.
 				 We deliever a professionaly designed logo... <!--
@@ -190,8 +195,8 @@
 		</div>
 		<div class='services_divs' id='service_branding'>
 			<img src='Images\Services\branding-01.png' alt='Changed?' />
-			<h2>Branding</h2>
-			<div class='services_p' id='service_branding_p'>
+			<h2 class='trnsl'>Branding</h2>
+			<div class='services_p trnsl' id='service_branding_p'>
 				Brand design is all about creating a brand identity that perfectly reflects your brand.
 				We can create elements that shape your company’s...
 				<!-- branding design and 
@@ -207,21 +212,21 @@
 		<span>
 			<img src="Images/footer_logo_2.png" alt='Not Found' id='footer_logo' />
 		</span>
-		<p>@ 2020 all rights reserved <strong>Webeldes</strong></p>
+		<p class='trnsl'>@ 2020 all rights reserved <strong>Webeldes</strong></p>
 		<div id='footer_icons'>
 			<i class="fab fa-facebook links" data-links='1'></i>
 			<i class="fab fa-instagram links" data-links='2'></i>
 			<i class="fab fa-linkedin links" data-links='3'></i>
 			<i class="fab fa-twitter-square links" data-links='4'></i>
-
 		</div>
 		<div id='footer_div'>
-			<span><a href='about_us.html'>About Us</a></span>
-			<span><a href='contact.php'>Contact</a></span>
-			<span><a href='portfolio.html'>Portfolio</a></span>
-			<span><a href='index.html#services_h'>Services</a></span>
+			<span><a class='trnsl gt_aboutus_page'>About Us</a></span>
+			<span><a class='trnsl gt_contact_page'>Contact</a></span>
+			<span><a class='go_to_port_page trnsl trnsl_port portfolio_btn'>Portfolio</a></span>
+			<span><a class='trnsl footer_ser'>Services</a></span>
 		</div>
 	</div>
 	<script src='main.js'></script>
+	<script src='translate.js'></script>
 </body>
 </html>

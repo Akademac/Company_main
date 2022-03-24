@@ -1,38 +1,3 @@
-<?php
-	$message_sent = false;
-	if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$text = $_POST['text'];
-	
-		$to = "webeldes2020@gmail.com";
-	
-		$body = "";
-	
-		$body .= "From: ".$name. "\r\n";
-		$body .= "Email: ".$email. "\r\n";
-		$body .= "Text: ".$text. "\r\n";
-	
-		$headers = array(
-			"From: webeldes.com",
-			"Reply-To: webeldes.com",
-			"X-Mailer: PHP/" . PHP_VERSION
-		);
-		$headers = implode("\r\n", $headers);
-
-		
-
-		if(mail($to, $text, $body,$headers)){
-			echo "mejl poslat";
-		}else{
-			echo "greska";
-		}
-
-
-		$message_sent = true;
-	}
-?>
-
 
 <!DOCTYPE html>
 <html>
@@ -62,14 +27,6 @@
 	</script>
 
 <body>
-	<?php
-		if($message_sent):
-	?>
-			<img src='Images/mail_sent.png' alt='Not Found!' id='mail_sent'/>
-			<p id='mail_sent_p'>Thank you for your message, we will contact you soon!</p>
-	<?php
-		else:
-	?>
     
 <!-- header -->
 	
@@ -123,11 +80,52 @@
 					<i class="fab fa-twitter-square links" data-links='4'></i>
 				</div>
 			</div>
+			<?php
+
+if(isset($_POST['submit'])) {
+	require 'PHPMailerAutoload.php';
+	require 'credential.php';
+
+	$mail = new PHPMailer;
+
+	$mail->SMTPDebug = 4;                               // Enable verbose debug output
+
+	$mail->isSMTP();                                      // Set mailer to use SMTP
+	$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = EMAIL;                 // SMTP username
+	$mail->Password = PASS;                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;                                    // TCP port to connect to
+
+	$mail->setFrom(EMAIL, 'Goran Djuric');
+	$mail->addAddress($_POST['email'], 'Joe User');     // Add a recipient
+	// $mail->addReplyTo('info@example.com', 'Information');
+
+
+	// $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+	// $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+	$mail->isHTML(true);                                  // Set email format to HTML
+
+	$mail->Subject = $_POST['name'];
+	$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+	$mail->AltBody = $_POST['text']
+
+	if(!$mail->send()) {
+		echo 'Message could not be sent.';
+		echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+		echo 'Message has been sent';
+	}
+
+}
+
+?>
             <div id='con_second'>
-                <form id='con_form' method='POST' action='contact.php'>
+                <form id='con_form' method='POST' action='testing.php'>
                     <input type="text" required placeholder="Your Name" id='input_name' name='name' req>
                     <input type="email" required placeholder="Email Address" id='input_email' name='email'>
-                    <textarea required cols="66" rows="12" placeholder="Your Message" id='textarea' name='text'd></textarea>
+                    <textarea required cols="66" rows="12" placeholder="Your Message" id='textarea' name='text'></textarea>
                     <button type="submit" id='con_submit'>SEND MESSAGE</button>
                 </form>
             </div>
@@ -154,9 +152,6 @@
 			<span><a class='trnsl_contact_footer go_back_from_contact_ser'>Services</a></span>
 		</div>
 	</div>
-	<?php
-		endif;
-	?>
 
     <script src='contact.js'></script>    
 </body>

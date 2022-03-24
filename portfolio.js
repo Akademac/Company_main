@@ -1,3 +1,5 @@
+let trnsl_hash = window.location.hash;
+
 //nav
 
 let burger = document.querySelector('#fa-bars');
@@ -30,6 +32,101 @@ burger.addEventListener('click', () => {
 	}
 	
 });
+
+let go_back_from_port_page = document.querySelectorAll('.go_back_from_port_page');
+let go_back_from_port_page_fte = document.querySelectorAll('.go_back_from_port_page_fte');
+let stay_on_port_page_nav = document.querySelectorAll('.stay_on_port_page_nav');
+let trnsl_port_to_about_nav = document.querySelectorAll('.trnsl_port_to_about_nav');
+let go_back_from_port_page_ser = document.querySelectorAll('.go_back_from_port_page_ser');
+let go_to_contact_page = document.querySelectorAll('.go_to_contact_page');
+
+trnsl_port_to_about_nav.forEach(e => {
+    e.addEventListener('click', () => {
+        if(trnsl_hash == '#srb') {
+            window.open('about_us.html#srb', '_self');
+        }
+        else if(trnsl_hash == '#ger') {
+            window.open('about_us.html#ger', '_self');
+        }
+        else {
+            window.open('about_us.html', '_self');
+        }
+    })
+})
+
+go_back_from_port_page.forEach(e => {
+    e.addEventListener('click', () => {
+        if(trnsl_hash == '#srb') {
+            window.open('index.html#srb', '_self');
+        }
+        else if(trnsl_hash == '#ger') {
+            window.open('index.html#ger', '_self');
+        } 
+        else {
+            window.open('index.html', '_self');
+        }
+    });
+
+});
+
+let scrollY = window.scrollY;
+
+
+go_back_from_port_page_fte.forEach(e => {
+    e.addEventListener('click', () => {
+        if(trnsl_hash == '#srb') {
+            window.open('index.html#srb_wte', '_self');
+            window.scrollBy(0, 200);
+        }
+        else if(trnsl_hash == '#ger') {
+            window.open('index.html#ger_wte', '_self');
+            window.scrollBy(0, 200);
+        }
+        else {
+			window.location.href = 'index.html#second_div_h';
+        }
+    });
+
+});
+
+go_back_from_port_page_ser.forEach(e => {
+    e.addEventListener('click', () => {
+        if(trnsl_hash == '#srb') {
+            window.open('index.html#srb_ser', '_self');
+            window.scrollBy(0, 800);
+        } 
+        else if(trnsl_hash == '#ger') {
+            window.open('index.html#ger_ser', '_self');
+            window.scrollBy(0, 800);
+        }
+        else {
+			window.location.href = 'index.html#services_h';
+        }
+    });
+
+});
+
+stay_on_port_page_nav.forEach(e => {
+    e.addEventListener('click', () => {
+        location.reload();
+    })
+});
+
+//go to contact page
+
+go_to_contact_page.forEach(e => {
+    e.addEventListener('click', () => {
+        if(trnsl_hash == '#srb') {
+            window.open('contact.php#srb', '_self');
+        }
+        else if(trnsl_hash == '#ger') {
+            window.open('contact.php#ger', '_self');
+        }
+        else {
+            window.open('contact.php', '_self');
+        }
+    })
+})
 
 //Portfolio Slider
 
@@ -117,7 +214,18 @@ imgs_container.forEach(e => {
 let footer_logo = document.querySelector('#footer_logo');
 
 footer_logo.addEventListener('click', () => {
-	window.open('index.html', '_self');
+    if(trnsl_hash == '#srb') {
+	    window.open('index.html#srb', '_self');
+    }
+    else {
+        window.open('index.html', '_self');
+    }
+})
+
+let footer_stay_on_port_page = document.querySelector('.footer_stay_on_port_page');
+
+footer_stay_on_port_page.addEventListener('click', () => {
+    location.reload();
 })
 
 //links
@@ -142,3 +250,96 @@ links.forEach(e => {
 
 	})
 })
+
+//translate helper
+
+let trnsl_srb_x = window.location.href;
+console.log(trnsl_srb_x);
+
+let trnsl_srb_y = trnsl_srb_x.indexOf('#');
+
+let trnsl_srb_z = trnsl_srb_x.slice(trnsl_srb_y, trnsl_srb_x.length);
+
+let trnsl_srb_count_sites = 39;
+let trnsl_srb_count_nav = 0;
+let trnsl_srb_count_mini_nav = 0;
+let trnsl_footer_nav_count = 35;
+
+
+
+let trnsl_port_page_nav = document.querySelectorAll('.trnsl_port_page_nav');
+let trnsl_port_page_mini_nav = document.querySelectorAll('.trnsl_port_page_mini_nav');
+let trnsl_port_page_main = document.querySelector('.trnsl_port_page_main');
+let trnsl_port_page_sites = document.querySelectorAll('.trnsl_port_page_sites');
+let trnsl_port_page_footer = document.querySelector('.trnsl_port_page_footer');
+let trnsl_footer_nav = document.querySelectorAll('.trnsl_footer_nav');
+
+if(trnsl_srb_z == '#srb') {
+    fetch('translate_srb.json')
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        trnsl_port_page_nav.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_nav];
+            trnsl_srb_count_nav++;
+        });
+
+        trnsl_port_page_mini_nav.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_mini_nav];
+            trnsl_srb_count_mini_nav++;
+        });
+
+        trnsl_port_page_main.innerHTML = data[19];
+
+        trnsl_port_page_sites.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_sites];
+            trnsl_srb_count_sites++;
+        });
+
+        trnsl_port_page_footer.innerHTML = data[34];
+
+        footer_icons.style.marginLeft = '-14.5rem';
+
+        trnsl_footer_nav.forEach(e => {
+            e.innerHTML = data[trnsl_footer_nav_count];
+            trnsl_footer_nav_count++;
+        })
+
+    })
+}
+
+else if(trnsl_srb_z == '#ger') {
+    fetch('translate_ger.json')
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        trnsl_port_page_nav.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_nav];
+            trnsl_srb_count_nav++;
+        });
+
+        trnsl_port_page_mini_nav.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_mini_nav];
+            trnsl_srb_count_mini_nav++;
+        });
+
+        trnsl_port_page_main.innerHTML = data[19];
+
+        trnsl_port_page_sites.forEach(e => {
+            e.innerHTML = data[trnsl_srb_count_sites];
+            trnsl_srb_count_sites++;
+        });
+
+        trnsl_port_page_footer.innerHTML = data[34];
+
+        footer_icons.style.marginLeft = '-14.5rem';
+
+        trnsl_footer_nav.forEach(e => {
+            e.innerHTML = data[trnsl_footer_nav_count];
+            trnsl_footer_nav_count++;
+        })
+
+    })
+}

@@ -28,7 +28,6 @@ burger.addEventListener('click', () => {
 			e.classList.add('mini_nav_a_act');
 		});
 	}
-	
 })
 
 //Animation
@@ -113,8 +112,6 @@ services_web_development.addEventListener('mouseout', () => {
 let services_single_page = document.querySelector('#services_single_page');
 let services_single_page_p = document.querySelector('#services_single_page_p');
 
-
-
 services_single_page.addEventListener('mouseover', () => {
 	services_single_page_p.innerHTML = `A single page website is one that fits on a single page.
 	Single page websites are fully loaded in the initial page
@@ -152,7 +149,6 @@ logo_design.addEventListener('mouseout', () => {
 let service_branding = document.querySelector('#service_branding');
 let service_branding_p = document.querySelector('#service_branding_p');
 
-
 service_branding.addEventListener('mouseover', () => {
 	service_branding_p.innerHTML = `Brand design is all about creating a brand identity that
 	 perfectly reflects your brand.
@@ -171,25 +167,67 @@ service_branding.addEventListener('mouseout', () => {
 
 //Go to Portfolio
 
-let portfolio_btn = document.querySelector('#portfolio_btn');
+let portfolio_btn = document.querySelectorAll('.portfolio_btn');
 
-portfolio_btn.addEventListener('click', () => {
-	window.open('portfolio.html', '_self');
-});
+let footer_to_port_page = document.querySelector('.footer_to_port_page');
+
+portfolio_btn.forEach(e => {
+	e.addEventListener('click', () => {
+		if(trnsl_srb_port === 'srb') {
+			window.open('portfolio.html#srb', '_self');
+		}
+		else if(trnsl_srb_port === 'ger') {
+			window.open('portfolio.html#ger', '_self');
+		} 
+		else {
+			window.open('portfolio.html', '_self');
+		}
+	});
+})
+
+
+
+//Go to About us
+
+let  gt_aboutus_page = document.querySelectorAll('.gt_aboutus_page');
+
+gt_aboutus_page.forEach(e => {
+	e.addEventListener('click',() => {
+		if(trnsl_srb_port === 'srb') {
+			window.open('about_us.html#srb', '_self');
+		}
+		else if(trnsl_srb_port === 'ger') {
+			window.open('about_us.html#ger', '_self');
+		}
+		else {
+			window.open('about_us.html', '_self');
+		}
+	})
+})
 
 
 //Go to Contact
 
-let main_btn = document.querySelector('#main_btn');
+let gt_contact_page = document.querySelectorAll('.gt_contact_page');
 
-main_btn.addEventListener('click', () => {
-	window.open('contact.php', '_self');
-});
+gt_contact_page.forEach(e => {
+	e.addEventListener('click',() => {
+		if(trnsl_srb_port === 'srb') {
+			window.open('contact.php#srb', '_self');
+		}
+		else if(trnsl_srb_port === 'ger') {
+			window.open('contact.php#ger', '_self');
+		}
+		else {
+			window.open('contact.php', '_self');
+		}
+	})
+})
 
 let footer_logo = document.querySelector('#footer_logo');
 
 footer_logo.addEventListener('click', () => {
-	window.open('index.html', '_self');
+	location.reload();
 })
 
 //page scroll animations
@@ -202,11 +240,44 @@ let second_div_ruler = document.querySelector('.second_div_ruler');
 
 window.addEventListener('scroll', () => {
 	let scrollY = window.scrollY;
-	if(scrollY > 500) {
+	let windowWidth = window.innerWidth;
+
+	if(windowWidth < 995) {
+		if(scrollY > 700) {
+			second_div_pen.classList.add('second_div_pen_anim');
+			second_div_ruler.classList.add('second_div_ruler_anim');
+		}
+
+		if(scrollY > 1700) {
+			truck.classList.add('second_div_truck_anim');
+		}
+
+		if(scrollY > 2500) {
+			icon_alarm_left.classList.add('icon_alarm_left_anim');
+			icon_alarm_right.classList.add('icon_alarm_right_anim');
+		}
+	}
+
+	if(windowWidth <= 500) {
+		if(scrollY > 1000) {
+			second_div_pen.classList.add('second_div_pen_anim');
+			second_div_ruler.classList.add('second_div_ruler_anim');
+		}
+
+		if(scrollY > 1500) {
+			truck.classList.add('second_div_truck_anim');
+		}
+
+		if(scrollY > 2000) {
+			icon_alarm_left.classList.add('icon_alarm_left_anim');
+			icon_alarm_right.classList.add('icon_alarm_right_anim');
+		}
+	}
+	else if(scrollY > 500) {
 		expects_anim();
 	}
-});
 
+});
 
 let expects_anim = () => {
 	icon_alarm_left.classList.add('icon_alarm_left_anim');
@@ -237,4 +308,22 @@ links.forEach(e => {
 		}
 
 	})
+})
+
+//translate helper
+
+let trnsl_home_btn = document.querySelectorAll('.trnsl_home_btn');
+
+trnsl_home_btn.forEach(e => {
+	e.addEventListener('click', () => {
+		location.reload();
+	})
+})
+
+//Testing Email
+
+let test = document.querySelector('#test');
+
+test.addEventListener('click',  () => {
+	window.open('testing.php');
 })
